@@ -1,8 +1,15 @@
+body {
+	height: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
 #title {
 	border: 5px solid black;
 	height: 100px;
 	width: 100%;
 	margin: auto;
+	
 }
 #title .name {
 	border: 2px solid black;
@@ -12,6 +19,7 @@
 	margin-right:80%;
 	display: inline-block;
 	text-align: auto;
+	background-color: #d9e024;
 }
 
 .name h1 {
@@ -32,14 +40,29 @@
 	border: 5px solid black;
 	margin: auto;
 	height: 70px;
-	width: 100%
-	
+	width: 100%;
+	background-color: #;
+	text-align: left;
+}
+
+#menu .testo {
+	padding-top: 8px;
+	color: black;
+	padding-left: 55px;
+	display: inline-block;
 }
 
 #corpo {
 	border: solid 5px black;
 	width: 100%;
 	height: 900px;
+	background-color: #3bb64c;
+}
+
+#corpo p {
+	color: white;
+	font-size: 20px;
+	padding-bottom: 20px;
 }
 
 nav {
@@ -48,6 +71,7 @@ nav {
 	width: 18%;
 	height: 100%;
 	display: inline-block;
+	background-color: #106850;
 }
 
 aside {
@@ -56,12 +80,19 @@ aside {
 	width: 18%;
 	height: 100%;
 	display: inline-block;
+	background-color: #106850;
 }
 
 article {
 	border: 5px black solid;
 	float: center;
 	height: 100%;
-	width: auto;
+	width: 62.18%;
 	display: inline-block;
+}
+
+footer {
+	border: solid black 5px;
+	height: 80px;
+	width: 100%;
 }
