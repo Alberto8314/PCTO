@@ -2,12 +2,14 @@
 <html>
 	<head>
 	<title>prova grafioo</title>
-	<meta name="author" content="PCTO">
+  <meta name="author" content="PCTO">
+  <link href="grafici.css" type="text/css" rel="stylesheet">
 	</head>
 	
 	
 	
 	<body>
+    <div class="dim">
 	<div>
   <canvas id="myChart"></canvas>
 	</div>
@@ -28,10 +30,10 @@
   const data = {
     labels: labels,
     datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(255, 122, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [10, 10, 5, 2, 20, 30, 45, 33],
+      label: 'prova grafico',
+      backgroundColor: 'rgb(123, 251, 178)', // sono i puntini del grafico
+      borderColor: 'rgb(122, 211, 134)', // colore della linea del grafico
+      data: [10, 10, 5, 2, 20, 30, 45, 33, 55],
     }]
   };
 
@@ -49,6 +51,6 @@
 </script>
 	
 	
-	
+</div>
 	</body>
 </html>
