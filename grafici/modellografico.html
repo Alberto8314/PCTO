@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>prova grafioo</title>
+	<title>prova grafico1</title>
   <meta name="author" content="PCTO">
   <link href="grafici.css" type="text/css" rel="stylesheet">
 	</head>
@@ -9,41 +9,53 @@
 	
 	
 	<body>
-    <h1></h1>
+    <h1>tabella iniziale</h1>
     <div class="dim">
 	<div>
   <canvas id="myChart"></canvas>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script>
-  const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'june',
-    'july',
-    'august',
-    'no',
-    'septemper',
-    'septemper',
-    'septemper'
-  ];
+const data = { 
+  labels: [
+    'giorno 1',
+    'giorno 2',
+    'giorno 3',
+    'giorno 4',
+    'giorno 5',
+    'giorno 6',
+    'giorno 7',
+    'giorno 8',
+    'giorno 9',
+    'giorno 10',
+  ],
+  datasets: [{
+    label: 'umidità',
+    data: [65, 59, 90, 81, 56, 55, 40, 33, 90, 12], // valori umidità
+    fill: true,
+    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+    borderColor: 'rgb(255, 99, 132)',
+    pointBackgroundColor: 'rgb(255, 99, 132)',
+    pointBorderColor: '#fff',
+    pointHoverBackgroundColor: '#fff',
+    pointHoverBorderColor: 'rgb(255, 99, 132)'
+  }, {
+    label: 'temperatura',
+    data: [28, 48, 40, 19, 96, 27, 100, 11, 15, 123], //valori temperatura
+    fill: true,
+    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+    borderColor: 'rgb(54, 162, 235)',
+    pointBackgroundColor: 'rgb(54, 162, 235)',
+    pointBorderColor: '#fff',
+    pointHoverBackgroundColor: '#fff',
+    pointHoverBorderColor: 'rgb(54, 162, 235)'
+  }]
+};
 
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'GRAFICO',
-      backgroundColor: 'rgb(123, 251, 178)', // sono i puntini del grafico
-      borderColor: 'rgb(122, 211, 134)', // colore della linea del grafico
-      data: [10, 10, 5, 2, 20, 30, 45, 33, 55, 3 ,3, 33],
-    }]
-  };
   
 
   const config = {
-    type: 'bar',
+    type: 'line',
     data: data,
     options: {
       plugins: {
@@ -53,14 +65,15 @@
           labels: {
             color: 'rgb(255, 122, 132)',
             title: {
-              text:'albe gay',
-              display: false,
+              display: true,
             }
           }
         }
       }
     }
   };
+
+
 </script>
 <script>
   const myChart = new Chart(
@@ -71,5 +84,13 @@
 	
 	
 </div>
+<div class="spazn">
+<span>attraverso questa tabella, si possono visuallizare i valori della temperatura e umidita per gli utlimi 10 giorni. Cliccando sul nome, possiamo disattivarlo e visualizzare uno dei due elementi.</span>
+</div>
+
+
+
+
+
 	</body>
 </html>
