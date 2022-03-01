@@ -4,6 +4,48 @@ body {
 	padding-right: 100px;
 }
 
+.layout {
+	border: 5px black solid;
+	width: auto;
+	height: auto;
+	display: grid;
+	grid:
+		"header header header" auto
+		"leftSide body rightSide" 1fr
+		"footer footer footer" auto
+		/ auto 1fr auto;
+	gap: 8px;
+}
+
+.header { 
+	border: 5px black solid;
+	grid-area: header;
+	width: 1fr;
+	height: auto;
+}
+.leftSide {
+	border: 5px black solid;
+	grid-area: leftSide; 
+	width: 100px;
+	height: 1fr;
+}
+.body {
+	border: 5px black solid;
+	grid-area: body;
+}
+.rightSide {
+	border: 5px black solid;
+	grid-area: rightSide;
+	width: 100px;
+	height: 700px;
+}
+.footer {
+	border: 5px black solid;
+	grid-area: footer; 
+	height: auto;
+	width: 1fr;
+}
+
 #title {
 	border: 5px solid black;
 	height: 100px;
@@ -39,7 +81,7 @@ body {
 #menu {
 	border: 5px solid black;
 	margin: auto;
-	height: 70px;
+	height: auto;
 	width: 100%;
 	text-align: left;
 }
