@@ -9,6 +9,7 @@
 	
 	
 	<body>
+    <h1></h1>
     <div class="dim">
 	<div>
   <canvas id="myChart"></canvas>
@@ -24,23 +25,41 @@
     'june',
     'july',
     'august',
+    'no',
     'septemper',
+    'septemper',
+    'septemper'
   ];
 
   const data = {
     labels: labels,
     datasets: [{
-      label: 'prova grafico',
+      label: 'GRAFICO',
       backgroundColor: 'rgb(123, 251, 178)', // sono i puntini del grafico
       borderColor: 'rgb(122, 211, 134)', // colore della linea del grafico
-      data: [10, 10, 5, 2, 20, 30, 45, 33, 55],
+      data: [10, 10, 5, 2, 20, 30, 45, 33, 55, 3 ,3, 3],
     }]
   };
+  
 
   const config = {
     type: 'line',
     data: data,
-    options: {}
+    options: {
+      plugins: {
+        legend: {
+          display:true,
+          position:'top',
+          labels: {
+            color: 'rgb(255, 122, 132)',
+            title: {
+              text:'albe gay',
+              display: false,
+            }
+          }
+        }
+      }
+    }
   };
 </script>
 <script>
