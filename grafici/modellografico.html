@@ -1,96 +1,90 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<title>prova grafico1</title>
-  <meta name="author" content="PCTO">
-  <link href="grafici.css" type="text/css" rel="stylesheet">
-	</head>
-	
-	
-	
-	<body>
-    <h1>tabella iniziale</h1>
-    <div class="dim">
-	<div>
-  <canvas id="myChart"></canvas>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script>
-const data = { 
-  labels: [
-    'giorno 1',
-    'giorno 2',
-    'giorno 3',
-    'giorno 4',
-    'giorno 5',
-    'giorno 6',
-    'giorno 7',
-    'giorno 8',
-    'giorno 9',
-    'giorno 10',
-  ],
-  datasets: [{
-    label: 'umidità',
-    data: [65, 59, 90, 81, 56, 55, 40, 33, 90, 12], // valori umidità
-    fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
-    pointBorderColor: '#fff',
-    pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
-  }, {
-    label: 'temperatura',
-    data: [28, 48, 40, 19, 96, 27, 100, 11, 15, 123], //valori temperatura
-    fill: true,
-    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-    borderColor: 'rgb(54, 162, 235)',
-    pointBackgroundColor: 'rgb(54, 162, 235)',
-    pointBorderColor: '#fff',
-    pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(54, 162, 235)'
-  }]
-};
+<head>
 
-  
 
-  const config = {
-    type: 'line',
-    data: data,
-    options: {
-      plugins: {
-        legend: {
-          display:true,
-          position:'top',
-          labels: {
-            color: 'rgb(255, 122, 132)',
-            title: {
-              display: true,
+
+</head>
+
+<body>
+  <div class="chartBox">
+    <canvas id="myChart"></canvas>
+    <canvas id="myChart1"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    // PRIMO GRAFICO /////////////////////////////////////////////////////////////
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'bar',
+      data:{
+          labels: ['Red', 'Blue', 'Green'],
+          datasets: [{
+            label: '# of Votes',
+            data: [12, 109, 104, 83],
+            backgroundColor: ['rgba(255, 99, 132, 0.2)', 
+                              'rgba(54, 162, 235, 0.2)', 
+                              'rgba(255, 206, 86, 0.2)',
+                              'rgba(75, 192, 192, 0.2)',
+                              'rgba(153, 102, 255, 0.2)',
+                              'rgba(255, 159, 64, 0.2)' 
+            ],
+            borderColor: [
+                              'rgba(255, 99, 132, 1)', 
+                              'rgba(54, 162, 235, 1)', 
+                              'rgba(255, 206, 86, 1)',
+                              'rgba(75, 192, 192, 1)',
+                              'rgba(153, 102, 255, 1)',
+                              'rgba(255, 159, 64, 1)' 
+            ],
+            borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+            y: {
+              beginAtZero: true
             }
           }
-        }
       }
-    }
-  };
-
-
-</script>
-<script>
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-</script>
-	
-	
-</div>
-<div class="spazn">
-<span>attraverso questa tabella, si possono visuallizare i valori della temperatura e umidita per gli utlimi 10 giorni. Cliccando sul nome, possiamo disattivarlo e visualizzare uno dei due elementi.</span>
-</div>
-
-
-
-
-
-	</body>
+    });
+    // SECONDO GARFICO /////////////////////////////////////////////////////////
+    const ctx1 = document.getElementById('myChart1').getContext('2d');
+    const myChart1 = new Chart(ctx1, {
+      type: 'pie',
+      data:{
+          labels: ['Red', 'Blue', 'Green'],
+          datasets: [{
+            label: '# of Votes',
+            data: [22, 109, 104, 83],
+            backgroundColor: ['rgba(255, 99, 132, 0.2)', 
+                              'rgba(54, 162, 235, 0.2)', 
+                              'rgba(255, 206, 86, 0.2)',
+                              'rgba(75, 192, 192, 0.2)',
+                              'rgba(153, 102, 255, 0.2)',
+                              'rgba(255, 159, 64, 0.2)' 
+            ],
+            borderColor: [
+                              'rgba(255, 99, 132, 1)', 
+                              'rgba(54, 162, 235, 1)', 
+                              'rgba(255, 206, 86, 1)',
+                              'rgba(75, 192, 192, 1)',
+                              'rgba(153, 102, 255, 1)',
+                              'rgba(255, 159, 64, 1)' 
+            ],
+            borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+      }
+    });
+    </script>
+      
+</body>
 </html>

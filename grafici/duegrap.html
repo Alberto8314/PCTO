@@ -19,12 +19,12 @@
                     ],
                 }],
                 labels: [
-                    'Request',
-                    'Layanan',
-                    'Problem'
+                    'temperatura',
+                    'umidita',
+                    'tempo'
                 ]
             };
-
+        
 
 
 
@@ -42,10 +42,11 @@
                     }
                 }
             });
+            
             var ctx_2 = document.getElementById("layanan_subbagian").getContext('2d');
             var data_2 = {
                 datasets: [{
-                    data: [10, 20, 30],
+                    data: [10, 20, 300],
                     backgroundColor: [
                         '#3c8dbc',
                         '#f56954',
@@ -62,7 +63,7 @@
 
 
             var myDoughnutChart_2 = new Chart(ctx_2, {
-                type: 'radar',
+                type: 'line',
                 data: data_2,
                 options: {
                     responsive: false,
@@ -84,10 +85,12 @@
 
    <body> 
       <div class="centro"> 
-         <canvas id="layanan" width="240px" height="240px"></canvas> 
-      </div> 
-      <div class="centro"> 
+         <canvas id="layanan" width="240px" height="240px"></canvas>  
+ 
          <canvas id="layanan_subbagian" width="240px" height="240px"></canvas> 
+         <canvas id="layanan" width="240px" height="240px"></canvas>  
+
       </div>  
+      <span>prova di due grafici nella medesima pagina</span>
    </body>
 </html>
