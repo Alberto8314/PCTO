@@ -1,11 +1,28 @@
 .chartBox{
-    width:600px !important;
-    height:600px !important;
+    width:500px !important;
+    height:500px !important;
     position:relaive;
     justify-content:center;
     margin: 0 auto;
 }
-
-body{
-    display:grid;
+#myChart1{
+    border:2px solid black;
+}
+#myChart2{
+    border:2px solid black;
+}
+#myChart{
+    border:2px solid black;
+}
+h1{
+    text-align:center;
+}
+.porz1{
+    border:10px solid blue;
+}
+.porz2{
+    border:10px solid green;
+}
+.porz3{
+    border:10px solid black;
 }
