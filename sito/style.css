@@ -1,13 +1,31 @@
-body {
+body, html {
 	height: auto;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 200px;
+	padding-right: 200px;
+
+}
+
+body {
+	margin:0;
+	padding:0;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
 }
 
 .layout {
 	border: 5px black solid;
-	width: auto;
+	width: 1017px;
 	height: auto;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	-webkit-flex-flow: row nowrap;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
 	display: grid;
 	grid:
 		"header header header" auto
@@ -26,18 +44,19 @@ body {
 .leftSide {
 	border: 5px black solid;
 	grid-area: leftSide; 
-	width: 100px;
+	width: 240px;
 	height: 1fr;
 }
 .body {
 	border: 5px black solid;
 	grid-area: body;
+	width: auto;
 }
 .rightSide {
 	border: 5px black solid;
 	grid-area: rightSide;
-	width: 100px;
-	height: 700px;
+	width: 240px;
+	height: 800px;
 }
 .footer {
 	border: 5px black solid;
@@ -47,25 +66,60 @@ body {
 }
 
 #title {
-	border: 5px solid black;
-	height: 100px;
+	height: 110px;
 	width: 100%;
-	margin: auto;
-	
-}
-#title .name {
-	border: 2px solid black;
-	margin: 10px;
-	margin-top: 20px;
-	margin-left: 5%;
-	margin-right:80%;
 	display: inline-block;
+	margin: auto;
+}
+
+.logo {
+	margin: auto;
+	padding-left: 20px;
+	float: left;
+	padding-right: 30px;
+}
+	
+.logo img {
+	height: 120px;
+	width: 100px;
+	margin: auto;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	 
+}
+.a {
+	height: 15px;
+	border-width:0;
+	color: #005000;
+	background-color: #005000;
+}
+
+#title .name {
+	height: 60px;
+	width: 59%;
 	text-align: auto;
-	background-color: #d9e024;
+	display: inline-block;
+}
+
+#title .subname {
+	height: 40px;
+	width: 70%;
+	text-align: auto;
+	display: inline-block;
+}
+
+.subname h3 {
+	text-align: left;
+	margin: auto;
+	padding-left: 80px;
+}
+
+.s {
+	margin-left: 65px;
 }
 
 .name h1 {
-	padding-left: 20px;
+	padding-left: 25px;
 	padding-right: 80px;
 	display: flex;
 	float: center;
@@ -79,15 +133,14 @@ body {
 }
 
 #menu {
-	border: 5px solid black;
 	margin: auto;
 	height: auto;
 	width: 100%;
 	text-align: left;
+	float: center;
 }
 
 #menu .testo {
-	padding-top: 8px;
 	color: black;
 	padding-left: 55px;
 	display: inline-block;
@@ -95,7 +148,7 @@ body {
 
 #corpo {
 	border: solid 5px black;
-	width: 100%;
+	width: auto;
 	height: 900px;
 	background-color: #3bb64c;
 }
