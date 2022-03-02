@@ -7,12 +7,64 @@
 </head>
 
 <body>
-  <h1>GRAFICI</h1>
-  <div class="chartBox">
-    <div class="porz1"><canvas id="myChart" width ="50px " height="50px"></canvas></div><P>CIAO</P> <!--id del primo grafico myChart-->
-    <div class="porz2"><canvas id="myChart1" width="50px" height="50px"></canvas></div><P>CIAO</P>>
-    <div class="porz3"><canvas id="myChart2" width="50px" height="50px"></canvas> <!--id del primo grafico myChart1-->
-  </div>
+  <header>
+		<hr class = "a" />   
+			<div id="title"> <!--titolo del sito-->
+				<div class ="logo">
+					<img src = "logo.png">
+				</div>
+				
+				<div class = "name">
+					<h1>S P R O U T</h1>
+				</div>
+				
+				<div class = "subname">
+					<h3>    Sustainable Project Related to Our useful Tools</h3>
+        </div>
+			</div>
+			<div id="menu"> <!--Menù di navigazione-->
+			<hr class = "a" />
+				<div class="testo">
+					<span>
+					<strong><p>MEN&Ugrave;</p>
+				</div>
+				<div class="testo">
+					<span>
+					<strong><p>MEN&Ugrave;</p>
+				</div>
+				<div class="testo">
+					<span>
+					<strong><p>MEN&Ugrave;</p>
+				</div>
+				<div class="testo">
+					<span>
+					<strong><p>MEN&Ugrave;</p>
+				</div>
+				<div class="testo">
+					<span>
+					<strong><p>MEN&Ugrave;</p>
+				</div>
+				<div class="testo">
+					<span>
+					<strong><p>MEN&Ugrave;</p>
+				</div>
+				<div class="testo">
+					<span>
+					<strong><p>MEN&Ugrave;</p>
+				</div>
+				<hr class = "a" />
+      </div>
+      
+      
+
+
+
+        
+    <div class="chartBox">
+     <div class="porz1"><canvas id="myChart" width ="50px " height="50px"></canvas></div><p>CIAO questo è il primo grafico che rappresenta la temperatura ciao ciaociao ciao ciao ciaso </P> <!--id del primo grafico myChart-->
+     <div class="porz2"><canvas id="myChart1" width="50px" height="50px"></canvas></div><p>CIAO questo è il secondo grafico che rappresenta l'umidita</p>
+      <div class="porz3"><canvas id="myChart2" width="50px" height="50px"></canvas></div><p>questo è il terzo grafico che rappresenta l'umidita</p> <!--id del primo grafico myChart1-->
+     </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <div>
   <script>
@@ -64,20 +116,16 @@
           datasets: [{
             label: 'pressione',
             data: [22, 109, 104, 83],
-            backgroundColor: ['rgba(255, 99, 132, 0.2)', 
+            backgroundColor: ['rgba(255, 232, 132, 0.2)', 
                               'rgba(54, 162, 235, 0.2)', 
                               'rgba(255, 206, 86, 0.2)',
-                              'rgba(75, 192, 192, 0.2)',
-                              'rgba(153, 102, 255, 0.2)',
-                              'rgba(255, 159, 64, 0.2)' 
+                              'rgba(75, 192, 192, 0.2)', 
             ],
             borderColor: [
                               'rgba(255, 99, 132, 1)', 
                               'rgba(54, 162, 235, 1)', 
                               'rgba(255, 206, 86, 1)',
                               'rgba(75, 192, 192, 1)',
-                              'rgba(153, 102, 255, 1)',
-                              'rgba(255, 159, 64, 1)' 
             ],
             borderWidth: 3
           }]
