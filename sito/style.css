@@ -1,24 +1,18 @@
 body, html {
 	height: auto;
+	width: auto;
 	padding-left: 200px;
 	padding-right: 200px;
-
 }
 
 body {
 	margin:0;
 	padding:0;
-	display: flex;
-	display: -webkit-flex;
-	justify-content: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	-webkit-align-items: center;
 }
 
 .layout {
 	border: 5px black solid;
-	width: 1017px;
+	width: auto;
 	height: auto;
 	display: flex;
 	display: -webkit-flex;
@@ -35,17 +29,13 @@ body {
 	gap: 8px;
 }
 
-.header { 
-	border: 5px black solid;
-	grid-area: header;
-	width: 1fr;
-	height: auto;
-}
 .leftSide {
 	border: 5px black solid;
 	grid-area: leftSide; 
 	width: 240px;
 	height: 1fr;
+	background-image: url("immagini/germoglio.png");
+	background-repeat: no-repeat;
 }
 .body {
 	border: 5px black solid;
@@ -57,6 +47,8 @@ body {
 	grid-area: rightSide;
 	width: 240px;
 	height: 800px;
+	background-image: url("immagini/natura-alberi.jpg");
+	background-repeat: no-repeat;
 }
 .footer {
 	border: 5px black solid;
@@ -150,7 +142,6 @@ body {
 	border: solid 5px black;
 	width: auto;
 	height: 900px;
-	background-color: #3bb64c;
 }
 
 #corpo p {
