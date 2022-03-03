@@ -13,7 +13,7 @@ body {
 .layout {
 	border: 5px black solid;
 	width: auto;
-	height: 2000px;
+	height: 1000px;
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row nowrap;
@@ -34,7 +34,7 @@ body {
 	grid-area: leftSide; 
 	width: 240px;
 	height: auto;
-	background-image: url("immagini/germoglio2.jpg");
+	background-image: url("immagini/germoglio3.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -48,7 +48,7 @@ body {
 	grid-area: rightSide;
 	width: 240px;
 	height: auto;
-	background-image: url("immagini/prova.png");
+	background-image: url("immagini/prova2.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -60,10 +60,13 @@ body {
 }
 
 #title {
-	height: 110px;
+	height: 230px;
 	width: 100%;
 	display: inline-block;
 	margin: auto;
+	background-image: url("immagini/banner.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .logo {
@@ -74,11 +77,9 @@ body {
 }
 	
 .logo img {
-	height: 120px;
-	width: 100px;
+	height: 100px;
+	width: 65px;
 	margin: auto;
-	padding-top: 5px;
-	padding-bottom: 30px;
 	 
 }
 .a {
@@ -179,188 +180,10 @@ footer {
 	width: 100%;
 }
 
-
-
-body, html {
-	height: auto;
-	width: auto;
-	padding-left: 200px;
-	padding-right: 200px;
+.spazziatura {
+	padding-bottom:10px;
 }
 
-body {
-	margin:0;
-	padding:0;
-}
-
-.layout {
-	border: 5px black solid;
-	width: auto;
-	height: 2000px;
-	display: flex;
-	display: -webkit-flex;
-	flex-flow: row nowrap;
-	-webkit-flex-flow: row nowrap;
-	justify-content: space-around;
-	-webkit-justify-content: space-around;
-	display: grid;
-	grid:
-		"header header header" auto
-		"leftSide body rightSide" 1fr
-		"footer footer footer" auto
-		/ auto 1fr auto;
-	gap: 8px;
-}
-
-.leftSide {
-	border: 5px black solid;
-	grid-area: leftSide; 
-	width: 240px;
-	height: auto;
-	background-image: url("immagini/germoglio2.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-.body {
-	border: 5px black solid;
-	grid-area: body;
-	width: auto;
-}
-.rightSide {
-	border: 5px black solid;
-	grid-area: rightSide;
-	width: 240px;
-	height: auto;
-	background-image: url("immagini/prova.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-.footer {
-	border: 5px black solid;
-	grid-area: footer; 
-	height: auto;
-	width: 1fr;
-}
-
-#title {
-	height: 110px;
-	width: 100%;
-	display: inline-block;
-	margin: auto;
-}
-
-.logo {
-	margin: auto;
-	padding-left: 20px;
-	float: left;
-	padding-right: 30px;
-}
-	
-.logo img {
-	height: 120px;
-	width: 100px;
-	margin: auto;
-	padding-top: 5px;
-	padding-bottom: 30px;
-	 
-}
-.a {
-	height: 15px;
-	border-width:0;
-	color: #005000;
-	background-color: #005000;
-}
-
-#title .name {
-	height: 60px;
-	width: 59%;
-	text-align: auto;
-	display: inline-block;
-}
-
-#title .subname {
-	height: 40px;
-	width: 70%;
-	text-align: auto;
-	display: inline-block;
-}
-
-.subname h3 {
-	text-align: left;
-	margin: auto;
-	padding-left: 80px;
-}
-
-.s {
-	margin-left: 65px;
-}
-
-.name h1 {
-	padding-left: 25px;
-	padding-right: 80px;
-	display: flex;
-	float: center;
-	margin: 10px;
-}
-
-.name img {
-	padding-right: 20px;
-	height: auto;
-	width: 70px;
-}
-
-#menu {
-	margin: auto;
-	height: auto;
-	width: 100%;
-	text-align: left;
-	float: center;
-}
-
-#menu .testo {
-	color: black;
-	padding-left: 55px;
-	display: inline-block;
-}
-
-#corpo {
-	width: auto;
-	height: 900px;
-}
-
-#corpo p {
-	color: white;
-	font-size: 20px;
-	padding-bottom: 20px;
-}
-
-nav {
-	float: left;
-	width: 18%;
-	height: 100%;
-	display: inline-block;
-	background-color: #106850;
-}
-
-aside {
-	float: right;
-	width: 18%;
-	height: 100%;
-	display: inline-block;
-	background-color: #106850;
-}
-
-article {
-	float: center;
-	height: 100%;
-	width: 62.18%;
-	display: inline-block;
-}
-
-footer {
-	height: 80px;
-	width: 100%;
-}
 
 
 
