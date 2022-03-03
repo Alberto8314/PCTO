@@ -3,8 +3,8 @@
 <head>
 <link href="grafici.css" style="text/css" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="logo.png">
-
-
+<script type="text/javascript" src="data.json"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
@@ -72,9 +72,12 @@
 
         
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <div>
+    
   <script>
+    
+  const umidita = JSON.parse(data);
+
     // PRIMO GRAFICO /////////////////////////////////////////////////////////////
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
@@ -83,7 +86,7 @@
           labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9'],
           datasets: [{
             label: 'temperatura',
-            data: [12, 11, 104],
+            data: [umidita[0].valore, umidita[1].valore, umidita[2].valore],
             backgroundColor: ['rgba(255, 99, 11, 0.2)', 
                               'rgba(54, 162, 235, 0.2)', 
                               'rgba(255, 206, 86, 0.2)',
