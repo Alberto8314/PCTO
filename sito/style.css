@@ -13,7 +13,7 @@ body {
 .layout {
 	border: 5px black solid;
 	width: auto;
-	height: auto;
+	height: 2000px;
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row nowrap;
@@ -33,9 +33,10 @@ body {
 	border: 5px black solid;
 	grid-area: leftSide; 
 	width: 240px;
-	height: 1fr;
-	background-image: url("immagini/germoglio.png");
+	height: auto;
+	background-image: url("immagini/germoglio2.jpg");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .body {
 	border: 5px black solid;
@@ -46,9 +47,10 @@ body {
 	border: 5px black solid;
 	grid-area: rightSide;
 	width: 240px;
-	height: 800px;
-	background-image: url("immagini/natura-alberi.jpg");
+	height: auto;
+	background-image: url("immagini/prova.png");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .footer {
 	border: 5px black solid;
@@ -139,7 +141,6 @@ body {
 }
 
 #corpo {
-	border: solid 5px black;
 	width: auto;
 	height: 900px;
 }
@@ -151,7 +152,6 @@ body {
 }
 
 nav {
-	border: 5px solid black;
 	float: left;
 	width: 18%;
 	height: 100%;
@@ -160,7 +160,6 @@ nav {
 }
 
 aside {
-	border: 5px solid black;
 	float: right;
 	width: 18%;
 	height: 100%;
@@ -169,7 +168,6 @@ aside {
 }
 
 article {
-	border: 5px black solid;
 	float: center;
 	height: 100%;
 	width: 62.18%;
@@ -177,10 +175,13 @@ article {
 }
 
 footer {
-	border: solid black 5px;
 	height: 80px;
 	width: 100%;
-}body, html {
+}
+
+
+
+body, html {
 	height: auto;
 	width: auto;
 	padding-left: 200px;
@@ -195,7 +196,7 @@ body {
 .layout {
 	border: 5px black solid;
 	width: auto;
-	height: auto;
+	height: 2000px;
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row nowrap;
@@ -215,9 +216,10 @@ body {
 	border: 5px black solid;
 	grid-area: leftSide; 
 	width: 240px;
-	height: 1fr;
-	background-image: url("immagini/germoglio.png");
+	height: auto;
+	background-image: url("immagini/germoglio2.jpg");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .body {
 	border: 5px black solid;
@@ -228,9 +230,10 @@ body {
 	border: 5px black solid;
 	grid-area: rightSide;
 	width: 240px;
-	height: 800px;
-	background-image: url("immagini/natura-alberi.jpg");
+	height: auto;
+	background-image: url("immagini/prova.png");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .footer {
 	border: 5px black solid;
@@ -321,7 +324,6 @@ body {
 }
 
 #corpo {
-	border: solid 5px black;
 	width: auto;
 	height: 900px;
 }
@@ -333,7 +335,6 @@ body {
 }
 
 nav {
-	border: 5px solid black;
 	float: left;
 	width: 18%;
 	height: 100%;
@@ -342,7 +343,6 @@ nav {
 }
 
 aside {
-	border: 5px solid black;
 	float: right;
 	width: 18%;
 	height: 100%;
@@ -351,7 +351,6 @@ aside {
 }
 
 article {
-	border: 5px black solid;
 	float: center;
 	height: 100%;
 	width: 62.18%;
@@ -359,8 +358,9 @@ article {
 }
 
 footer {
-	border: solid black 5px;
 	height: 80px;
 	width: 100%;
 }
+
+
 
