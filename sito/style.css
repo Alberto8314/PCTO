@@ -43,7 +43,7 @@ body {
 }
 
 .leftSide {
-	border: 5px solid #005000;;
+	border: 5px solid #005000;
 	grid-area: leftSide; 
 	width: 240px;
 	height: 1fr;
@@ -145,13 +145,13 @@ body {
 }
 
 a{
-	color:black;
-	text-decoration:none;
+	color: black;
+	text-decoration: none;
 
 }
 a:hover{
 	text-decoration:underline;
-	color:blue;
+	color: #005000;
 	font-weight:bold;
 }
 
