@@ -246,6 +246,7 @@ footer {
 	margin-top: 10px;
 	margin-left: 10px;
 	display: inline-block;
+	min-height:404;
 }
 .img{
 	padding: 15px;

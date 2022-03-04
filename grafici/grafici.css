@@ -241,7 +241,35 @@ article {
 .copy {
 	float: left;
 	color: white;
-	display: inline-block;
-	padding-top: 80px;
+	display: flex;
+}
+
+.contatti {
+	float: left;
+	color: white;
+	display: flex;
+	font-size: 15px;
+	
+}
+
+#copyblock {
+	padding-top: 15px;
 	padding-left: 15px;
+	width: 300 px;
+	height: 140px;
+	float:left;
+	flex-direction: column;
+}
+.contatti2 {
+	float: left;
+	color: white;
+	display: flex;
+	font-size: 15px;
+	padding-left: 15px;
+}
+
+#copyblock a:hover {
+	text-decoration: underline;
+	font-weight:bold;
+	font-size: 16px;
 }

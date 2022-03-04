@@ -41,7 +41,7 @@
 					<a href="#">ASSISTENZA</a>
 				</div>
 				<div class="testo">
-				  <a href ="#">I NOSTRI PRODOTTI</a>
+				  <a href ="../sito/inostriprodotti.html">I NOSTRI PRODOTTI</a>
 				</div>
 				<div class="testo">
 					<a href="#">ARDUINO ALLA BASE</a>
@@ -64,11 +64,19 @@
         </div>
       </div>
 					<div class="rightSide"></div>
-					<div class="footer">
-            <h3 class = "copy">ITIS Vinci Carpi (MO) 3CI 2021-2022 &copy;</h3>	
-					<a href = "https://www.facebook.com/people/Sprout-Carpi/100078603526319/" target="new_blank"><img src = "immagini/logo facebook.png" class = "imf" /></a>
-					<a href = "https://www.instagram.com/sproutcarpiofficial/" target="new_blank"><img src = "immagini/logo insta 2.png" class = "imi" /></a>
-					<a href = "https://twitter.com/CarpiSprout" target="new_blank"><img src = "immagini/logo twitter.png" class ="imt" /></a>
+          <div class="footer">
+            <div id = "copyblock">
+              <div class="copy">
+                <h3 class = "copy">ITIS Vinci Carpi (MO) 3CI 2021-2022 &copy;</h3> 
+              </div>
+              <br />
+              <div><a href="mailto:sproutassistenza@gmail.com?subject=Assistenza SPROUT"  class="contatti">sproutassistenza@gmail.com</a></div>
+              <div class="contatti2">+39 00000034</div>
+            </div>
+          <a href = "https://www.facebook.com/people/Sprout-Carpi/100078603526319/" target="new_blank"><img src = "immagini/logo facebook.png" class = "imf" /></a>
+          <a href = "https://www.instagram.com/sproutcarpiofficial/" target="new_blank"><img src = "immagini/logo insta 2.png" class = "imi" /></a>
+          <a href = "https://twitter.com/CarpiSprout" target="new_blank"><img src = "immagini/logo twitter.png" class ="imt" /></a>
+          
           </div>
 				</section>
 
@@ -92,7 +100,7 @@
           labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14', 'giorno 15', 'giorno 16'],
           datasets: [{
             label: 'temperatura',
-            data: [temp[0].valore, temp[1].valore, temp[2].valore, temp[3].valore, temp[4].valore, temp[5].valore, temp[6].valore, temp[7].valore, temp[8].valore, temp[10].valore, temp[11].valore, temp[12].valore, temp[13].valore, temp[14].valore, temp[15].valore],  // collegamento con il file json, array e loro valori
+            data: [temp[0].valore, temp[1].valore, temp[2].valore, temp[3].valore, temp[4].valore, temp[5].valore, temp[6].valore, temp[7].valore, temp[8].valore, temp[10].valore, temp[11].valore, temp[12].valore, temp[13].valore, temp[14].valore, temp[15].valore,],  // collegamento con il file json, array e loro valori
             backgroundColor: ['rgba(255, 99, 11, 0.2)', 
                               'rgba(54, 162, 235, 0.2)', 
                               'rgba(255, 206, 86, 0.2)',
