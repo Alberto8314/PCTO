@@ -2,3 +2,5 @@ data = '[{"valore": 40}, {"valore": 83}, {"valore": 90}, {"valore":55},{"valore"
 // umidita[0].valore --> 45
 // data[0], data[1]
 // valori umidita
+dataz = '[{"valore": 222}, {"valore": 38}, {"valore": 69}, {"valore":111},{"valore":211}]'
+datax = '[{"valore": 434}, {"valore": 56}, {"valore": 232}, {"valore":111},{"valore":211}]'
