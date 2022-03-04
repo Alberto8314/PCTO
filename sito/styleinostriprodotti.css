@@ -57,6 +57,7 @@ body {
 	grid-area: body;
 	width: auto;
 	height:1800px;
+	text-align:center;
 }
 .rightSide {
 	border: 5px #005000 solid;
@@ -72,7 +73,7 @@ body {
 	grid-area: footer; 
 	height: 150px;
 	width: 1fr;
-	background-color: #333333;
+	background-color: #013220;
 	margin-bottom: 20px;
 }
 
@@ -237,4 +238,22 @@ footer {
 	display: inline-block;
 	padding-top: 80px;
 	padding-left: 15px;
+}
+.caselle{
+	border: 2px solid #005000;
+	width: 250px;
+	height: 350px;
+	margin-top: 10px;
+	margin-left: 10px;
+	display: inline-block;
+}
+.img{
+	padding: 15px;
+	width:220px;
+	height:270px;
+}
+figcaption{
+	text-align: center;
+	font-weight:bold;
+	margin-top:2px;
 }
