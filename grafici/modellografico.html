@@ -82,17 +82,17 @@
     
   <script>
     
-  const umidita = JSON.parse(data); // collego file json con rispettivi valori
+  const temp = JSON.parse(temperatura); // collego file json con rispettivi valori
 
     // PRIMO GRAFICO /////////////////////////////////////////////////////////////
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
       type: 'bar',
       data:{
-          labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9'],
+          labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14', 'giorno 15', 'giorno 16'],
           datasets: [{
             label: 'temperatura',
-            data: [umidita[0].valore, umidita[1].valore, umidita[2].valore, umidita[3].valore, umidita[4].valore],  // collegamento con il file json, array e loro valori
+            data: [temp[0].valore, temp[1].valore, temp[2].valore, temp[3].valore, temp[4].valore, temp[5].valore, temp[6].valore, temp[7].valore, temp[8].valore, temp[10].valore, temp[11].valore, temp[12].valore, temp[13].valore, temp[14].valore, temp[15].valore],  // collegamento con il file json, array e loro valori
             backgroundColor: ['rgba(255, 99, 11, 0.2)', 
                               'rgba(54, 162, 235, 0.2)', 
                               'rgba(255, 206, 86, 0.2)',
@@ -130,7 +130,7 @@
     const myChart1 = new Chart(ctx1, {
       type: 'line',
       data:{
-          labels: ['giorno 1', 'giorno 2', 'giorno 3'],
+          labels: ['giorno 1', 'giorno 2', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 6',],
           datasets: [{
             label: 'pressione',
             data: [temperatura[0].valore, temperatura[1].valore, temperatura[2].valore],
