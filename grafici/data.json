@@ -1,3 +1,4 @@
-data = '[{"valore": 38}, {"valore": 83}, {"valore": 90}]'
+data = '[{"valore": 40}, {"valore": 83}, {"valore": 90}, {"valore":55},{"valore":204}]'
 // umidita[0].valore --> 45
 // data[0], data[1]
+// valori umidita

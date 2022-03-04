@@ -85,7 +85,7 @@ body {
 	background-attachment: fixed;
 }
 .footer {
-	border: 5px black solid;
+	border: 5px green solid;
 	grid-area: footer; 
 	height: auto;
 	width: 1fr;
@@ -163,11 +163,12 @@ body {
 a{
 	color:black;
 	text-decoration:none;
+	font-weight:bold;
 
 }
 a:hover{
-	text-decoration:underline;
-	color:blue;
+	text-decoration:none;
+	color:green;
 	font-weight:bold;
 }
 
@@ -203,11 +204,6 @@ article {
 	display: inline-block;
 }
 
-footer {
-	border: solid black 5px;
-	height: 80px;
-	width: 100%;
-}
 
 .a {
 	height: 15px;
