@@ -216,7 +216,7 @@ article {
 	height: 80px;
 	padding-top: 40px;
 	display: inline-block;
-	padding-right: 640px;
+	margin-right: 640px;
 	float: right;
 }
 
@@ -272,4 +272,16 @@ article {
 	text-decoration: underline;
 	font-weight:bold;
 	font-size: 16px;
+	color:white;
+}
+.menuz{
+	color:green;
+}
+#menu .testo {
+    font-size: 15px;
+    color: black;
+    padding-left: 55px;
+    display: inline-block;
+    margin-top:20px;
+    margin-bottom:20px;
 }

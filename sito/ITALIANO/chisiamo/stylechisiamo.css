@@ -211,9 +211,9 @@ footer {
 .imf {
 	width: 80px;
 	height: 80px;
-	margin-top: 40px;
+	padding-top: 40px;
 	display: inline-block;
-	margin-right: 200px;
+	margin-right: 640px;
 	float: right;
 }
 
@@ -221,7 +221,7 @@ footer {
 	width: 80px;
 	height: 80px;
 	padding-right: 20px;
-	margin-top: 39px;
+	padding-top: 39px;
 	display: inline-block;
 	float: right;
 }
@@ -229,7 +229,7 @@ footer {
 .imt {
 	width: 80px;
 	height: 80px;
-	margin-top: 40px;
+	padding-top: 40px;
 	display: inline-block;
 	float: right;
 	padding-right: 20px;

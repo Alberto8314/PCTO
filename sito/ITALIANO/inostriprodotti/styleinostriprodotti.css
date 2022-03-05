@@ -206,30 +206,30 @@ footer {
 }
  
 .imf {
-    width: 80px;
-    height: 80px;
-    padding-top: 40px;
-    display: inline-block;
-    padding-right: 640px;
-    float: right;
+	width: 80px;
+	height: 80px;
+	padding-top: 40px;
+	display: inline-block;
+	margin-right: 640px;
+	float: right;
 }
- 
+
 .imi {
-    width: 80px;
-    height: 80px;
-    padding-right: 20px;
-    padding-top: 39px;
-    display: inline-block;
-    float: right;
+	width: 80px;
+	height: 80px;
+	padding-right: 20px;
+	padding-top: 39px;
+	display: inline-block;
+	float: right;
 }
- 
+
 .imt {
-    width: 80px;
-    height: 80px;
-    padding-top: 40px;
-    display: inline-block;
-    float: right;
-    padding-right: 20px;
+	width: 80px;
+	height: 80px;
+	padding-top: 40px;
+	display: inline-block;
+	float: right;
+	padding-right: 20px;
 }
  
 .copy {
@@ -257,4 +257,13 @@ figcaption{
     text-align: center;
     font-weight:bold;
     margin-top:2px;
+}
+figcaption:hover{
+    text-decoration:underline;
+    color:green;
+    cursor: zoom-in;
+}
+.img:hover{
+    text-decoration:underline;
+    cursor: zoom-in;
 }
