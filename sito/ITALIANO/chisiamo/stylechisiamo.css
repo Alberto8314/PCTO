@@ -3,6 +3,9 @@ body, html {
 	width: auto;
 	padding-left: 200px;
 	padding-right: 200px;
+	/*display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;*/
 }
 
 body {
@@ -11,6 +14,7 @@ body {
 }
 
 #menu .testo {
+	font-size: 15px;
 	color: black;
 	padding-left: 55px;
 	display: inline-block;
@@ -48,7 +52,7 @@ body {
 	width: 240px;
 	height: 1fr;
 	background-repeat: no-repeat;
-	background-image: url("immagini/germoglio3.png");
+	background-image: url("../../immagini/germoglio3.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -57,7 +61,6 @@ body {
 	grid-area: body;
 	width: auto;
 	height:1800px;
-	text-align:center;
 }
 .rightSide {
 	border: 5px #005000 solid;
@@ -65,7 +68,7 @@ body {
 	width: 240px;
 	height: auto;
 	background-repeat: no-repeat;
-	background-image: url("immagini/prova2.png");
+	background-image: url("../../immagini/prova2.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -73,7 +76,7 @@ body {
 	grid-area: footer; 
 	height: 150px;
 	width: 1fr;
-	background-color: #013220;
+	background-color: #022600;
 	margin-bottom: 20px;
 }
 
@@ -99,7 +102,7 @@ body {
 	width: 100%;
 	display: inline-block;
 	margin: auto;
-	background-image: url("immagini/banner.png");
+	background-image: url("../../immagini/banner.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -153,7 +156,7 @@ a{
 	font-weight:bold;
 
 }
-a:hover{
+#menu a:hover{
 	text-decoration: none;
 	color: #005000;
 	font-weight:bold;
@@ -208,9 +211,9 @@ footer {
 .imf {
 	width: 80px;
 	height: 80px;
-	padding-top: 40px;
+	margin-top: 40px;
 	display: inline-block;
-	padding-right: 640px;
+	margin-right: 200px;
 	float: right;
 }
 
@@ -218,7 +221,7 @@ footer {
 	width: 80px;
 	height: 80px;
 	padding-right: 20px;
-	padding-top: 39px;
+	margin-top: 39px;
 	display: inline-block;
 	float: right;
 }
@@ -226,7 +229,7 @@ footer {
 .imt {
 	width: 80px;
 	height: 80px;
-	padding-top: 40px;
+	margin-top: 40px;
 	display: inline-block;
 	float: right;
 	padding-right: 20px;
@@ -235,26 +238,36 @@ footer {
 .copy {
 	float: left;
 	color: white;
-	display: inline-block;
-	padding-top: 80px;
+	display: flex;
+}
+
+.contatti {
+	float: left;
+	color: white;
+	display: flex;
+	font-size: 15px;
+	
+}
+
+#copyblock {
+	padding-top: 15px;
+	padding-left: 15px;
+	width: 300 px;
+	height: 140px;
+	float:left;
+	flex-direction: column;
+}
+.contatti2 {
+	float: left;
+	color: white;
+	display: flex;
+	font-size: 15px;
 	padding-left: 15px;
 }
-.caselle{
-	border: 2px solid #005000;
-	width: 250px;
-	height: 350px;
-	margin-top: 10px;
-	margin-left: 10px;
-	display: inline-block;
-	min-height:404;
-}
-.img{
-	padding: 15px;
-	width:220px;
-	height:270px;
-}
-figcaption{
-	text-align: center;
+
+#copyblock a:hover {
+	text-decoration: underline;
 	font-weight:bold;
-	margin-top:2px;
+	font-size: 16px;
 }
+

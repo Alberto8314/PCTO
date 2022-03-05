@@ -52,7 +52,7 @@ body {
 	width: 240px;
 	height: 1fr;
 	background-repeat: no-repeat;
-	background-image: url("../immagini/germoglio3.png");
+	background-image: url("../../immagini/germoglio3.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -68,7 +68,7 @@ body {
 	width: 240px;
 	height: auto;
 	background-repeat: no-repeat;
-	background-image: url("../immagini/prova2.png");
+	background-image: url("../../immagini/prova2.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -102,7 +102,7 @@ body {
 	width: 100%;
 	display: inline-block;
 	margin: auto;
-	background-image: url("../immagini/banner.png");
+	background-image: url("../../immagini/banner.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -120,7 +120,6 @@ body {
 	text-align: auto;
 	display: inline-block;
 }
-
 
 .subname h3 {
 	text-align: left;

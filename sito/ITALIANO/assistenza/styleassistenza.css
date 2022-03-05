@@ -1,24 +1,11 @@
-.chartBox{
-    width:500px !important;
-    height:500px !important;
-	margin: 0 auto;
-	margin-top:20px;
-}
-#myChart1{
-    border:2px solid green;
-}
-#myChart2{
-    border:2px solid green;
-}
-#myChart{
-    border:2px solid green;
-}
-
 body, html {
 	height: auto;
 	width: auto;
 	padding-left: 200px;
 	padding-right: 200px;
+	/*display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;*/
 }
 
 body {
@@ -60,12 +47,12 @@ body {
 }
 
 .leftSide {
-	border: 5px solid #005000;;
+	border: 5px solid #005000;
 	grid-area: leftSide; 
 	width: 240px;
 	height: 1fr;
 	background-repeat: no-repeat;
-	background-image: url("../IMMAGINI/germoglio3.png");
+	background-image: url("../../immagini/germoglio3.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -81,7 +68,7 @@ body {
 	width: 240px;
 	height: auto;
 	background-repeat: no-repeat;
-	background-image: url("../IMMAGINI/prova2.png");
+	background-image: url("../../immagini/prova2.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -89,9 +76,10 @@ body {
 	grid-area: footer; 
 	height: 150px;
 	width: 1fr;
-	background-color: #333333;
+	background-color: #022600;
 	margin-bottom: 20px;
 }
+
 .logo {
 	padding-top: 35px;
 	margin: auto;
@@ -114,7 +102,7 @@ body {
 	width: 100%;
 	display: inline-block;
 	margin: auto;
-	background-image: url("../IMMAGINI/banner.png");
+	background-image: url("../../immagini/banner.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -162,15 +150,17 @@ body {
 }
 
 a{
-	color:black;
-	text-decoration:none;
+	color: black;
+	text-decoration: none;
+	font-size: 15px;
 	font-weight:bold;
 
 }
-a:hover{
-	text-decoration:none;
-	color:green;
+#menu a:hover{
+	text-decoration: none;
+	color: #005000;
 	font-weight:bold;
+	font-size: 16px;
 }
 
 
@@ -205,6 +195,11 @@ article {
 	display: inline-block;
 }
 
+footer {
+	border: solid black 5px;
+	height: 80px;
+	width: 100%;
+}
 
 .a {
 	height: 15px;
@@ -212,6 +207,7 @@ article {
 	color: #005000;
 	background-color: #005000;
 }
+
 .imf {
 	width: 80px;
 	height: 80px;

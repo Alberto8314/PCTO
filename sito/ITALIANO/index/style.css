@@ -52,7 +52,7 @@ body {
 	width: 240px;
 	height: 1fr;
 	background-repeat: no-repeat;
-	background-image: url("immagini/germoglio3.png");
+	background-image: url("../../immagini/germoglio3.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -68,7 +68,7 @@ body {
 	width: 240px;
 	height: auto;
 	background-repeat: no-repeat;
-	background-image: url("immagini/prova2.png");
+	background-image: url("../../immagini/prova2.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -102,7 +102,7 @@ body {
 	width: 100%;
 	display: inline-block;
 	margin: auto;
-	background-image: url("immagini/banner.png");
+	background-image: url("../../immagini/banner.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -119,6 +119,11 @@ body {
 	width: 70%;
 	text-align: auto;
 	display: inline-block;
+}
+
+#title .login {
+	float: right;
+	margin-right: 30px;
 }
 
 .subname h3 {
@@ -271,3 +276,71 @@ footer {
 	font-size: 16px;
 }
 
+div #hormenu {
+	width: auto;
+	float: right;
+	margin: 0;
+	padding-top: 5px;
+	background: ;
+}
+
+div#hormenu ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+div#hormenu li
+{
+width:100px;
+float:left;
+margin: 0;
+padding: 0;
+color:black;
+}
+
+div#hormenu a
+{
+display: block;
+padding: 5px;
+color: #000;
+text-decoration: none;
+}
+
+div#hormenu a:hover
+{
+background-color: #000033;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+div#hormenu li ul
+{
+display: none
+}
+
+div#hormenu li:hover ul
+{
+display: block;
+position: absolute;
+z-index:1;
+width:99px;
+padding: 0;
+margin: 0 0 0 -1px;
+border:1px solid black;
+background: white;
+}
+
+div#hormenu li li { 
+	border:none; 
+	width: 99px;
+}
+div#hormenu li li a {
+	padding:2px 2px 2px 10px; 
+}
+
+div#hormenu .lingua {
+	color: white;
+	text-decoration: none;
+}
