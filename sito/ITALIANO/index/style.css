@@ -2,15 +2,23 @@ body, html {
 	height: auto;
 	width: auto;
 	padding-left: 200px;
-	padding-right: 200px;
+	padding-right: 300px;
 	/*display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;*/
+	justify-content: center;
 }
 
 body {
 	margin:0;
 	padding:0;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row nowrap;
+	-webkit-flex-flow: row nowrap;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	width: 1600px;
 }
 
 #menu .testo {
@@ -32,6 +40,7 @@ body {
 	width: auto;
 	height: auto;
 	display: flex;
+	flex-direction: nowrap;
 	display: -webkit-flex;
 	flex-flow: row nowrap;
 	-webkit-flex-flow: row nowrap;
@@ -52,14 +61,14 @@ body {
 	width: 240px;
 	height: 1fr;
 	background-repeat: no-repeat;
-	background-image: url("../../immagini/germoglio3.png");
+	background-image: url("../IMMAGINI/germoglio3.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 .body {
 	border: 5px solid #005000;;
 	grid-area: body;
-	width: auto;
+	width: 900px;
 	height:1800px;
 }
 .rightSide {
@@ -68,7 +77,7 @@ body {
 	width: 240px;
 	height: auto;
 	background-repeat: no-repeat;
-	background-image: url("../../immagini/prova2.png");
+	background-image: url("../immagini/prova2.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -99,12 +108,13 @@ body {
 
 #title {
 	height: 230px;
-	width: 100%;
+	width: auto;
 	display: inline-block;
 	margin: auto;
-	background-image: url("../../immagini/banner.png");
+	background-image: url("../immagini/banner.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	padding-left: 66px;
 }
 
 #title .name {
@@ -343,4 +353,5 @@ div#hormenu li li a {
 div#hormenu .lingua {
 	color: white;
 	text-decoration: none;
+ text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
 }
