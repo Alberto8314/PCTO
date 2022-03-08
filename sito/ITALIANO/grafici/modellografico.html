@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../../../style.css" style="text/css" rel="stylesheet">
+<title>SPROUT</title>
+<link rel="icon" type="image/x-icon" href="../sito/immagini/logo.png">
+<script type="text/javascript" src="data.json"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+  <header>
+		<hr class = "a" />   
+			<div id="title"> <!--titolo del sito-->
+				<div class ="logo">
+					<img src = "../../immagini/logo.png">
+				</div>
+				
+				<div class = "name">
+          <h1>S P R O U T</h1>
+        </div>
+        <div id="hormenu"><!-- div che contiene il menu -->
+					<ul> <!-- lista principale: definisce il menu nella sua interezza -->
+						<li>
+						<a class = "lingua">Lingua</a> <!-- primo list-item, prima voce del menu -->
+							<ul> <!-- Lista annidata: voci del sotto-menu -->
+							<li><a href="index.html">Italiano</a></li>
+							<li><a href="../inglese/indexinglese.html">Inglese</a></li>
+							</ul> <!-- Fine del sotto-menu -->
+						</li> <!-- Chiudo il list-item -->
+						<!--qui altri list-item -->
+					</ul>
+				</div>
+				
+				<div class = "subname">
+					<h3>Sustainable Project Related to Our Useful Tools</h3>
+        </div>
+			</div>
+			 
+      <hr class = "a" />
+      <div id="menu"> <!--Menù di navigazione-->
+				<div class="testo">
+					<a href="../index.html">MEN&Ugrave;</a>
+				</div>
+				<div class="testo">
+              <a href="" class="grafico menuz">GRAFICI</a>
+       </div>
+				<div class="testo">
+					<a href="../">CHI SIAMO</a>
+				</div>
+				<div class="testo">
+					<a href="../assistenza/assistenza.html">ASSISTENZA</a>
+				</div>
+				<div class="testo">
+				  <a href ="../inostriprodotti/inostriprodotti.html">I NOSTRI PRODOTTI</a>
+				</div>
+				<div class="testo">
+					<a href="../sito/ITALIANO/arduinobase/arduionoallabase.html">ARDUINO ALLA BASE</a>
+				</div>
+				<div class="testo">
+					<a href="#">MEN&Ugrave;</a>
+				</div>
+				<hr class = "a" />
+      </div>
+
+
+			 <!--Il corpo del sito-->
+				<section class="layout">
+					<div class="leftSide"></div>
+					<div class="body"> 
+         <div class="chartBox">
+            <div class="porz1"><canvas id="myChart" width ="50px " height="50px"></canvas></div><p>CIAO questo è il primo grafico che rappresenta la temperatura ciao ciaociao ciao ciao ciaso </P> <!--id del primo grafico myChart-->
+            <div class="porz2"><canvas id="myChart1" width="50px" height="50px"></canvas></div><p>CIAO questo è il secondo grafico che rappresenta l'umidita</p>
+             <div class="porz3"><canvas id="myChart2" width="50px" height="50px"></canvas></div><p>questo è il terzo grafico che rappresenta l'umidita</p> <!--id del primo grafico myChart1-->
+        </div>
+      </div>
+					<div class="rightSide"></div>
+          <div class="footer">
+            <div id = "copyblock">
+              <div class="copy">
+                <h3 class = "copy">ITIS Vinci Carpi (MO) 3CI 2021-2022 &copy;</h3> 
+              </div>
+              <br />
+              <div><a href="mailto:sproutassistenza@gmail.com?subject=Assistenza SPROUT"  class="contatti">sproutassistenza@gmail.com</a></div>
+              <div class="contatti2">+39 00000034</div>
+            </div>
+          <a href = "https://www.facebook.com/people/Sprout-Carpi/100078603526319/" target="new_blank"><img src = "../../immagini/logo facebook.png" class = "imf" /></a>
+          <a href = "https://www.instagram.com/sproutcarpiofficial/" target="new_blank"><img src = "../../immagini/logo insta 2.png" class = "imi" /></a>
+          <a href = "https://twitter.com/CarpiSprout" target="new_blank"><img src = "../../immagini/logo twitter.png" class ="imt" /></a>
+          
+          </div>
+				</section>
+
+      
+
+
+
+        
+
+  <div>
+    
+  <script>
+    
+  const temp = JSON.parse(temperatura); // collego file json con rispettivi valori
+
+    // PRIMO GRAFICO /////////////////////////////////////////////////////////////
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+      type: 'bar',
+      data:{
+          labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14', 'giorno 15', 'giorno 16', 'giorno 17', 'giorno 18', 'giorno 19', 'giorno 20', 'giorno 21', 'giorno 22', 'giorno 23', 'giorno 24', 'giorno 25', 'giorno 26', 'giorno 27', 'giorno 28', 'giorno 29', 'giorno 30', 'giorno 31'],
+          datasets: [{
+            label: 'temperatura',
+            data: [temp[0].valore, temp[1].valore, temp[2].valore, temp[3].valore, temp[4].valore, temp[5].valore, temp[6].valore, temp[7].valore, temp[8].valore, temp[10].valore, temp[11].valore, temp[12].valore, temp[13].valore, temp[14].valore, temp[15].valore,],  // collegamento con il file json, array e loro valori
+            backgroundColor: ['rgba(255, 99, 11, 0.2)', 
+                              'rgba(54, 162, 235, 0.2)', 
+                              'rgba(255, 206, 86, 0.2)',
+                              'rgba(75, 192, 192, 0.2)',
+            ],
+            borderColor: [
+                              'rgba(255, 99, 132, 1)', 
+                              'rgba(54, 162, 235, 1)', 
+                              'rgba(255, 206, 86, 1)',
+                              'rgba(75, 192, 192, 1)',
+                              'rgba(153, 102, 255, 1)',
+                              'rgba(255, 159, 64, 1)' 
+            ],
+            borderWidth: 3
+          }]
+      },
+      options: {
+          responsive:true, 
+          maintainAspectratio:false,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+      }
+    });
+  </script>
+  </div>
+  <div>
+  <script>
+    const temperatura = JSON.parse(dataz)
+  
+    // SECONDO GRAFICO /////////////////////////////////////////////////////////
+    const ctx1 = document.getElementById('myChart1').getContext('2d');
+    const myChart1 = new Chart(ctx1, {
+      type: 'line',
+      data:{
+          labels: ['giorno 1', 'giorno 2', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 6',],
+          datasets: [{
+            label: 'pressione',
+            data: [temperatura[0].valore, temperatura[1].valore, temperatura[2].valore],
+            fill: true,
+            backgroundColor: ['rgba(255, 232, 132, 0.2)', 
+                              'rgba(54, 162, 235, 0.2)', 
+                              'rgba(255, 206, 86, 0.2)',
+                              'rgba(75, 192, 192, 0.2)', 
+            ],
+            borderColor: [
+                              'rgba(255, 99, 132, 1)', 
+                              'rgba(54, 162, 235, 1)', 
+                              'rgba(255, 206, 86, 1)',
+                              'rgba(75, 192, 192, 1)',
+            ],
+            borderWidth: 3
+          },{
+            label: 'temperatura',
+            data: [28, 48, 40, 222], //valori temperatura
+            fill: true,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgb(54, 162, 235)',
+            pointBackgroundColor: 'rgb(54, 162, 235)',
+            pointBorderColor: 'rgb(32, 123, 232)', // colore punti
+            pointHoverBackgroundColor: 'rgb(32, 123, 232)',
+            pointHoverBorderColor: 'rgb(54, 162, 235)'
+
+
+
+          }]
+      },
+      options: {
+          responsive:true, 
+          maintainAspectratio:false,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+      }
+    });
+  </script>
+  </div>
+  <div>
+  <script>
+      const tempo = JSON.parse(datax);
+    const ctx2 = document.getElementById('myChart2').getContext('2d');
+    const myChart2 = new Chart(ctx2, {
+      type: 'pie',
+      data:{
+          labels: ['giorno 1', 'giorno 2', 'giorno 3',],
+          datasets: [{
+            label: 'acqua',
+            data: [tempo[0].valore, tempo[1].valore, tempo[2].valore],
+            backgroundColor: ['rgba(123, 222, 132, 0.2)', 
+                              'rgba(54, 162, 235, 0.2)', 
+                              'rgba(255, 206, 86, 0.2)', 
+            ],
+            borderColor: [
+                              'rgba(123, 222, 132, 1)', 
+                              'rgba(54, 162, 235, 1)', 
+                              'rgba(255, 206, 86, 1)',
+            ],
+            borderWidth: 4
+          }]
+      },
+      options: {
+          responsive:true, 
+          maintainAspectratio:false,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+      }
+    });
+
+  </script>
+  </div>
+</body>
+</html>
