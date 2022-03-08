@@ -1,0 +1,8 @@
+data = '[{"valore": 40}, {"valore": 83}, {"valore": 90}, {"valore":55},{"valore":204}]'
+// umidita[0].valore --> 45
+// data[0], data[1]
+// valori umidita
+dataz = '[{"valore": 222}, {"valore": 38}, {"valore": 69}, {"valore":111},{"valore":211}]'
+datax = '[{"valore": 434}, {"valore": 56}, {"valore": 232}, {"valore":111},{"valore":211}]'
+temperatura = '[{"valore": 10.0}, {"valore": 15.0}, {"valore": 20.0}, {"valore": 30.0 }, {"valore": 10.0}, {"valore": 15.0}, {"valore": 20.0},{"valore": 30.0},{"valore": 10.0}, {"valore": 15.0}, {"valore": 20.0},{"valore": 15.0},{"valore": 30.0},{"valore": 10.0},{"valore": 15.0},{"valore": 20.0}]'
+
