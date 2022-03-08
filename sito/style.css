@@ -60,7 +60,7 @@ body {
 	width: 240px;
 	height: 1fr;
 	background-repeat: no-repeat;
-	background-image: url("sito/immagini/germoglio3.png");
+	background-image: url("immagini/germoglio3.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -76,7 +76,7 @@ body {
 	width: 240px;
 	height: auto;
 	background-repeat: no-repeat;
-	background-image: url("sito/immagini/prova2.png");
+	background-image: url("immagini/prova2.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -110,7 +110,7 @@ body {
 	width: auto;
 	display: inline-block;
 	margin: auto;
-	background-image: url("sito/immagini/banner.png");
+	background-image: url("immagini/banner.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	padding-left: 66px;
