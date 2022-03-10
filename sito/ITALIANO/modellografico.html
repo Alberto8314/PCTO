@@ -2,6 +2,7 @@
 <html>
 <head>
 <link href="../style.css" style="text/css" rel="stylesheet">
+<link href="modellografico.css" style="text/css" rel="stylesheet">
 <title>SPROUT</title>
 <link rel="icon" type="image/x-icon" href="../immagini/logo.png">
 <script type="text/javascript" src="test.json"></script>
@@ -50,9 +51,6 @@
 					<a href="chisiamo.html">CHI SIAMO</a>
 				</div>
 				<div class="testo">
-					<a href="assistenza.html">ASSISTENZA</a>
-				</div>
-				<div class="testo">
 				  <a href ="inostriprodotti.html">I NOSTRI PRODOTTI</a>
 				</div>
 				<div class="testo">
@@ -68,12 +66,12 @@
 			 <!--Il corpo del sito-->
 				<section class="layout">
 					<div class="leftSide"></div>
-					<div class="body"> 
-         <div class="chartBox">
-            <div class="porz1"><canvas id="myChart" width ="50px " height="50px"></canvas></div><p class="testograf">CIAO questo è il primo grafico che rappresenta la temperatura ciao ciaociao ciao ciao ciaso </P> <!--id del primo grafico myChart-->
-            <div class="porz2"><canvas id="myChart1" width="50px" height="50px"></canvas></div><p class="testograf">CIAO questo è il secondo grafico che rappresenta l'umidita</p>
-             <div class="porz3"><canvas id="myChart2" width="50px" height="50px"></canvas></div><p class="testograf">questo è il terzo grafico che rappresenta l'umidita</p> <!--id del primo grafico myChart1-->
-        </div>
+					<div class="body">
+            <h1 style="padding-left: 15px;">Dati e statistiche</h1>
+              <div class="chartBox">
+                <p class="testograf">Questo grafico rappresenta la mediana, la moda e la media dell'umidit&aacute; nella serra nell'arco di un mese</P><div class="porz1"><canvas id="myChart" width ="50px " height="50px"></canvas></div> <!--id del primo grafico myChart-->
+                <p class="testograf">Questo grafico rappresenta la mediana, la moda e la media della temperatura nella serra nell'arco di un mese</p><div class="porz2"><canvas id="myChart1" width="50px" height="50px"></canvas></div>
+                </div>
       </div>
 					<div class="rightSide"></div>
           <div class="footer">
@@ -107,11 +105,11 @@
     // PRIMO GRAFICO /////////////////////////////////////////////////////////////
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
-      type: 'bar',
+      type: 'line',
       data:{
           labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14', 'giorno 15', 'giorno 16', 'giorno 17', 'giorno 18', 'giorno 19', 'giorno 20', 'giorno 21', 'giorno 22', 'giorno 23', 'giorno 24', 'giorno 25', 'giorno 26', 'giorno 27', 'giorno 28', 'giorno 29', 'giorno 30', 'giorno 31'],
           datasets: [{
-            label: 'temperatura',
+            label: 'moda',
             data: [temp[0].valore],  // collegamento con il file json, array e loro valori
             backgroundColor: ['rgba(255, 99, 11, 0.2)', 
                               'rgba(54, 162, 235, 0.2)', 
@@ -127,6 +125,32 @@
                               'rgba(255, 159, 64, 1)' 
             ],
             borderWidth: 3
+          },{
+            label: 'media',
+            data: [28, 48, 40, 222], //valori temperatura
+            fill: true,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgb(54, 162, 235)',
+            pointBackgroundColor: 'rgb(54, 162, 235)',
+            pointBorderColor: 'rgb(32, 123, 232)', // colore punti
+            pointHoverBackgroundColor: 'rgb(32, 123, 232)',
+            pointHoverBorderColor: 'rgb(54, 162, 235)'
+
+
+
+          },{
+            label: 'mediana',
+            data: [83, 44, 6, 2], //valori temperatura
+            fill: true,
+            backgroundColor: 'rgb(0, 255, 0)',
+            borderColor: 'rgb(0, 80, 0)',
+            pointBackgroundColor: 'rgb(230, 255, 230)',
+            pointBorderColor: 'rgb(230, 255, 230)', // colore punti
+            pointHoverBackgroundColor: 'rgb(230, 255, 230)',
+            pointHoverBorderColor: 'rgb(230, 255, 230)'
+
+
+
           }]
       },
       options: {
@@ -148,27 +172,28 @@
     // SECONDO GRAFICO /////////////////////////////////////////////////////////
     const ctx1 = document.getElementById('myChart1').getContext('2d');
     const myChart1 = new Chart(ctx1, {
-      type: 'bar',
+      type: 'line',
       data:{
-          labels: ['giorno 1', 'giorno 2', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 6',],
+        labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14', 'giorno 15', 'giorno 16', 'giorno 17', 'giorno 18', 'giorno 19', 'giorno 20', 'giorno 21', 'giorno 22', 'giorno 23', 'giorno 24', 'giorno 25', 'giorno 26', 'giorno 27', 'giorno 28', 'giorno 29', 'giorno 30', 'giorno 31'],
           datasets: [{
-            label: 'pressione',
-            data: [umidita[0].valore],
-            fill: true,
-            backgroundColor: ['rgba(255, 232, 132, 0.2)', 
+            label: 'moda',
+            data: [temp[0].valore],  // collegamento con il file json, array e loro valori
+            backgroundColor: ['rgba(255, 99, 11, 0.2)', 
                               'rgba(54, 162, 235, 0.2)', 
                               'rgba(255, 206, 86, 0.2)',
-                              'rgba(75, 192, 192, 0.2)', 
+                              'rgba(75, 192, 192, 0.2)',
             ],
             borderColor: [
                               'rgba(255, 99, 132, 1)', 
                               'rgba(54, 162, 235, 1)', 
                               'rgba(255, 206, 86, 1)',
                               'rgba(75, 192, 192, 1)',
+                              'rgba(153, 102, 255, 1)',
+                              'rgba(255, 159, 64, 1)' 
             ],
             borderWidth: 3
           },{
-            label: 'temperatura',
+            label: 'media',
             data: [28, 48, 40, 222], //valori temperatura
             fill: true,
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
@@ -180,54 +205,31 @@
 
 
 
-          }]
-      },
-      options: {
-          responsive:true, 
-          maintainAspectratio:false,
-          scales: {
-            y: {
-              beginAtZero: true
-            }
-          }
-      }
-    });
-  </script>
-  </div>
-  <div>
-  <script>
-      const tempo = JSON.parse(media_temp);
-    const ctx2 = document.getElementById('myChart2').getContext('2d');
-    const myChart2 = new Chart(ctx2, {
-      type: 'pie',
-      data:{
-          labels: ['giorno 1', 'giorno 2', 'giorno 3',],
-          datasets: [{
-            label: 'acqua',
-            data: [tempo[0].valore],
-            backgroundColor: ['rgba(123, 222, 132, 0.2)', 
-                              'rgba(54, 162, 235, 0.2)', 
-                              'rgba(255, 206, 86, 0.2)', 
-            ],
-            borderColor: [
-                              'rgba(123, 222, 132, 1)', 
-                              'rgba(54, 162, 235, 1)', 
-                              'rgba(255, 206, 86, 1)',
-            ],
-            borderWidth: 4
-          }]
-      },
-      options: {
-          responsive:true, 
-          maintainAspectratio:false,
-          scales: {
-            y: {
-              beginAtZero: true
-            }
-          }
-      }
-    });
+          },{
+            label: 'mediana',
+            data: [83, 44, 6, 2], //valori temperatura
+            fill: true,
+            backgroundColor: 'rgb(0, 255, 0)',
+            borderColor: 'rgb(0, 80, 0)',
+            pointBackgroundColor: 'rgb(230, 255, 230)',
+            pointBorderColor: 'rgb(230, 255, 230)', // colore punti
+            pointHoverBackgroundColor: 'rgb(230, 255, 230)',
+            pointHoverBorderColor: 'rgb(230, 255, 230)'
 
+
+
+          }]
+      },
+      options: {
+          responsive:true, 
+          maintainAspectratio:false,
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+      }
+    });
   </script>
   </div>
 </body>
