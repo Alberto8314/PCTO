@@ -571,3 +571,27 @@ ol{
 	font-size: 16px;
 	padding-left: 22px;
 }
+.chisiamo{
+	font-size: 50px;
+	color:darkgreen;
+}
+.text{
+	font-size:19px;
+	font-family: sans-serif;
+}
+.text2{
+	color:green;
+	display:inline-block;
+}
+.chisiamo2{
+	font-size:28px;
+	margin-top:50px;
+	color:darkgreen;
+}
+.text2:hover{
+	text-decoration: underline;
+	font-weight: bold;
+}
+.mappa{
+	text-align: center;
+	margin-top: 80px;
