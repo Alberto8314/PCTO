@@ -405,7 +405,7 @@ figcaption:hover{
 }
 .img:hover{
     text-decoration:underline;
-    cursor: zoom-in;
+    cursor: crosshair;
 }
 /*fine css i nostri prodotti*/
 
@@ -600,4 +600,8 @@ ol{
 }
 .testograf{
 	font-size: 20px;
+}
+.pdf{
+	text-decoration: none;
+	color:black;
 }
