@@ -1,8 +1,12 @@
 html,body {
     padding: 0;
     margin: 0;
-    font: 14px 'Open sans', sans-serif;
     color: #333;
+    height: auto;
+	width: auto;
+	padding-left: 120px;
+	padding-right: 120px;
+	justify-content: center;
 }
 h1 {
     margin: 0;
@@ -16,7 +20,7 @@ form {
     width: 360px;
     margin: 30px auto;
 }
-input {;
+input {
     border: 2px solid #ccc;
     padding: 6px;
 	margin-bottom: 10px;
