@@ -10,6 +10,7 @@
 		<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
 		<link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
 		<link rel="icon" type="image/x-icon" href="../immagini/logo.png">
+		<link href="../login.css" type="text/css" rel="stylesheet" />
 	</head>
 
 
@@ -75,7 +76,20 @@
 			 <!--Il corpo del sito-->
 				<section class="layout">
 					<div class="leftSide"></div>
-					<div class="body"></div>
+					<div class="body">
+						<form method="post" action="/php/register.php">
+							<h1>Registrazione</h1>
+							<input type="text" id="username" placeholder="Username" name="username" maxlength="20" required>
+							<input type="password" id="password" placeholder="Password" name="password" required>
+							<button type="submit" name="register">Registrati</button>
+						</form>
+						<form method="post" action="/php/login.php">
+							<h1>Login</h1>
+							<input type="text" id="username" placeholder="Username" name="username">
+							<input type="password" id="password" placeholder="Password" name="password">
+							<button type="submit" name="login">Accedi</button>
+						</form>
+					</div>
 					<div class="rightSide"></div>
 					<div class="footer">
 						<div id = "copyblock">
