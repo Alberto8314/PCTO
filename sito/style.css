@@ -575,6 +575,8 @@ ol{
 	font-size: 16px;
 	padding-left: 22px;
 }
+/*fine serra base*/
+/*inizio chi siamo*/
 .chisiamo{
 	font-size: 50px;
 	color:darkgreen;
@@ -609,4 +611,11 @@ ol{
 .pdf{
 	text-decoration: none;
 	color:black;
+}
+.inlineclasse{
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	padding:5px;
+	border-radius: 50%;
 }

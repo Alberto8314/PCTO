@@ -2,5 +2,8 @@
 	border: 5px solid #005000;;
 	grid-area: body;
 	width: 900px;
-	height:1500px;
+	height:10000px;
+}
+.filaimmagini{
+	text-align: center;
 }
