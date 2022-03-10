@@ -405,7 +405,7 @@ figcaption:hover{
 }
 .img:hover{
     text-decoration:underline;
-    cursor: zoom-in;
+    cursor: crosshair;
 }
 /*fine css i nostri prodotti*/
 
@@ -472,10 +472,16 @@ ol{
 }
 
 .alogo {
-	width: 150px;
-	height: 150px;
-	margin-left: 40px;
-	margin-top: 20px;
+	width: 125px;
+	height: 125px;
+	margin-left: 60px;
+	margin-top: 50px;
+}
+
+.alogo2 {
+	width: 200px;
+	height: 200px;
+	margin-left: 10px;
 }
 
 .atitle {
@@ -601,4 +607,8 @@ ol{
 .testograf{
 	font-size: 20px;
 	padding-bottom: 35px;
+}
+.pdf{
+	text-decoration: none;
+	color:black;
 }
