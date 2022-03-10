@@ -574,6 +574,7 @@ ol{
 .chisiamo{
 	font-size: 50px;
 	color:darkgreen;
+	margin-left: 20px;
 }
 .text{
 	font-size:19px;
@@ -585,8 +586,9 @@ ol{
 }
 .chisiamo2{
 	font-size:28px;
-	margin-top:50px;
+	margin-top:70px;
 	color:darkgreen;
+	margin-left:20px;
 }
 .text2:hover{
 	text-decoration: underline;
