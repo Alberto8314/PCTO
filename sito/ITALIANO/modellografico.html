@@ -5,7 +5,7 @@
 <link href="modellografico.css" style="text/css" rel="stylesheet">
 <title>SPROUT</title>
 <link rel="icon" type="image/x-icon" href="../immagini/logo.png">
-<script type="text/javascript" src="test.json"></script>
+<script type="text/javascript" src="test_grafici.json"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
@@ -105,12 +105,12 @@
     // PRIMO GRAFICO /////////////////////////////////////////////////////////////
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
-      type: 'line',
+      type: 'bar',
       data:{
           labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14', 'giorno 15', 'giorno 16', 'giorno 17', 'giorno 18', 'giorno 19', 'giorno 20', 'giorno 21', 'giorno 22', 'giorno 23', 'giorno 24', 'giorno 25', 'giorno 26', 'giorno 27', 'giorno 28', 'giorno 29', 'giorno 30', 'giorno 31'],
           datasets: [{
             label: 'moda',
-            data: [temp[0].valore],  // collegamento con il file json, array e loro valori
+            data: [temp[0].valore, temp[1].valore, temp[2].valore],  // collegamento con il file json, array e loro valori
             backgroundColor: ['rgba(255, 99, 11, 0.2)', 
                               'rgba(54, 162, 235, 0.2)', 
                               'rgba(255, 206, 86, 0.2)',
