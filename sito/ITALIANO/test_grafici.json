@@ -1,0 +1,6 @@
+media_temp='[{"valore": 18.82}, {"valore": 18.72}, {"valore": 18.90}, {"valore": 18.93}]'
+media_um='[{"valore": 30.00}, {"valore": 29.48}, {"valore": 30.17}, {"valore": 30.29}]'
+mediana_temp='[{"valore": 18.84}, {"valore": 18.75}, {"valore": 18.93}, {"valore": 18.93}]'
+mediana_um='[{"valore": 30.00}, {"valore": 29.00}, {"valore": 30.00}, {"valore": 30.00}]'
+moda_temp='[{"valore": 18.84}, {"valore": 18.84}, {"valore": 18.93}, {"valore": 18.93}]'
+moda_um='[{"valore": 30.00}, {"valore": 30.00}, {"valore": 30.00}, {"valore": 30.00}]'
