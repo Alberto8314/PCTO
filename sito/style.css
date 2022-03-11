@@ -574,10 +574,44 @@ ol{
 	text-align: center;
 }
 
+.abuy3 {
+	border: solid #022600;
+	display: inline-block;
+	width: 110px;
+	margin-left: 250px;
+	height: 60px;
+	border-radius: 10px;
+	color: white;
+	background-color: #022600;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+
+.abuy3:hover {
+	width: 115px;
+	height: 65px;
+	font-size: 22px;
+}
 .pno {
 	text-decoration: line-through;
 	font-size: 16px;
 	padding-left: 22px;
+}
+
+.titolodettaglio2 {
+	text-align: center;
+	display: grid;
+	padding-top: 200px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.imgdettaglio2 {
+	float: left;
+	padding-left: 25px;
+	margin-top: 125px;
 }
 /*fine serra base*/
 /*inizio chi siamo*/
