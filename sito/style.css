@@ -396,7 +396,8 @@ div#hormenu .lingua {
 .caselle figcaption{
     text-align: center;
     font-weight:bold;
-    margin-top:2px;
+	margin-top:2px;
+	color: black;
 }
 .caselle figcaption:hover{
     text-decoration:underline;
@@ -406,6 +407,9 @@ div#hormenu .lingua {
 .img:hover{
     text-decoration:underline;
     cursor: crosshair;
+}
+.caselle a {
+	text-decoration: none;
 }
 /*fine css i nostri prodotti*/
 
