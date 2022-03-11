@@ -101,8 +101,8 @@
   <script>
     
   const um = JSON.parse(mediana_um); // collego file json con rispettivi valori
-  const moda = JSON.parse(moda_um);
   const mediaUm = JSON.parse(media_um);
+  const moda = JSON.parse(moda_um);
 
     // PRIMO GRAFICO /////////////////////////////////////////////////////////////
     const ctx = document.getElementById('myChart').getContext('2d');
@@ -166,71 +166,69 @@
   </script>
   </div>
   <div>
-  <script>
-    const umidita = JSON.parse(media_um)
-  
-    // SECONDO GRAFICO /////////////////////////////////////////////////////////
-    const ctx1 = document.getElementById('myChart1').getContext('2d');
-    const myChart1 = new Chart(ctx1, {
-      type: 'bar',
-      data:{
-        labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14', 'giorno 15', 'giorno 16', 'giorno 17', 'giorno 18', 'giorno 19', 'giorno 20', 'giorno 21', 'giorno 22', 'giorno 23', 'giorno 24', 'giorno 25', 'giorno 26', 'giorno 27', 'giorno 28', 'giorno 29', 'giorno 30', 'giorno 31'],
-          datasets: [{
-            label: 'moda',
-            data: [temp[0].valore],  // collegamento con il file json, array e loro valori
-            backgroundColor: ['rgba(255, 99, 11, 0.2)', 
-                              'rgba(54, 162, 235, 0.2)', 
-                              'rgba(255, 206, 86, 0.2)',
-                              'rgba(75, 192, 192, 0.2)',
-            ],
-            borderColor: [
-                              'rgba(255, 99, 132, 1)', 
-                              'rgba(54, 162, 235, 1)', 
-                              'rgba(255, 206, 86, 1)',
-                              'rgba(75, 192, 192, 1)',
-                              'rgba(153, 102, 255, 1)',
-                              'rgba(255, 159, 64, 1)' 
-            ],
-            borderWidth: 3
-          },{
-            label: 'media',
-            data: [28, 48, 40, 222], //valori temperatura
-            fill: true,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)',
-            pointBackgroundColor: 'rgb(54, 162, 235)',
-            pointBorderColor: 'rgb(32, 123, 232)', // colore punti
-            pointHoverBackgroundColor: 'rgb(32, 123, 232)',
-            pointHoverBorderColor: 'rgb(54, 162, 235)'
-
-
-
-          },{
-            label: 'mediana',
-            data: [83, 44, 6, 2], //valori temperatura
-            fill: true,
-            backgroundColor: 'rgb(0, 255, 0)',
-            borderColor: 'rgb(0, 80, 0)',
-            pointBackgroundColor: 'rgb(230, 255, 230)',
-            pointBorderColor: 'rgb(230, 255, 230)', // colore punti
-            pointHoverBackgroundColor: 'rgb(230, 255, 230)',
-            pointHoverBorderColor: 'rgb(230, 255, 230)'
-
-
-
-          }]
-      },
-      options: {
-          responsive:true, 
-          maintainAspectratio:false,
-          scales: {
-            y: {
-              beginAtZero: true
-            }
+    <script>
+    
+    
+        // PRIMO GRAFICO /////////////////////////////////////////////////////////////
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+          type: 'line',
+          data:{
+              labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4'],
+              datasets: [{
+                label: 'mediana',
+                data: [524,64,563],  // collegamento con il file json, array e loro valori
+                backgroundColor: ['rgba(255, 99, 11, 0.2)', 
+                                  'rgba(54, 162, 235, 0.1)', 
+                                  'rgba(255, 206, 86, 0.2)',
+                                  'rgba(75, 192, 192, 0.2)',
+                ],
+                borderColor: [
+                                  'rgba(255, 99, 132, 1)', 
+                                  'rgba(54, 162, 235, 1)', 
+                                  'rgba(255, 206, 86, 1)',
+                                  'rgba(75, 192, 192, 1)', 
+                ],
+                borderWidth: 3
+              },{
+                label: 'media',
+                data: [12, 23, 34], 
+                fill: true,
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgb(54, 162, 235)',
+                pointBackgroundColor: 'rgb(54, 162, 235)',
+                pointBorderColor: 'rgb(32, 123, 232)', // colore punti
+                pointHoverBackgroundColor: 'rgb(32, 123, 232)',
+                pointHoverBorderColor: 'rgb(54, 162, 235)'
+    
+    
+    
+              },{
+                label: 'moda',
+                data: [56,67,78], //valori temperatura
+                fill: true,
+                backgroundColor: 'rgb(0, 0, 0, 0.2)',
+                borderColor: 'rgb(0, 80, 0)',
+                pointBackgroundColor: 'rgb(230, 255, 230)',
+                pointBorderColor: 'rgb(230, 255, 230)', // colore punti
+                pointHoverBackgroundColor: 'rgb(230, 255, 230)',
+                pointHoverBorderColor: 'rgb(230, 255, 230)'
+    
+    
+    
+              }]
+          },
+          options: {
+              responsive:true, 
+              maintainAspectratio:false,
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
           }
-      }
-    });
-  </script>
+        });
+      </script>
   </div>
 </body>
 </html>
