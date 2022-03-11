@@ -1,0 +1,6 @@
+.body {
+	border: 5px solid #005000;;
+	grid-area: body;
+	width: 900px;
+	height:2500px;
+}
