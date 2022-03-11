@@ -107,49 +107,30 @@
     // PRIMO GRAFICO /////////////////////////////////////////////////////////////
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
-      type: 'line',
+      type: 'bar',
       data:{
           labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14', 'giorno 15', 'giorno 16', 'giorno 17', 'giorno 18', 'giorno 19', 'giorno 20', 'giorno 21', 'giorno 22', 'giorno 23', 'giorno 24', 'giorno 25', 'giorno 26', 'giorno 27', 'giorno 28', 'giorno 29', 'giorno 30', 'giorno 31'],
           datasets: [{
             label: 'mediana',
             data: [um_mediana[0].valore, um_mediana[1].valore, um_mediana[2].valore, um_mediana[3].valore],  // collegamento con il file json, array e loro valori
-            backgroundColor: ['rgba(255, 99, 11, 0.2)', 
-                              'rgba(54, 162, 235, 0.2)', 
-                              'rgba(255, 206, 86, 0.2)',
-                              'rgba(75, 192, 192, 0.2)',
-            ],
-            borderColor: [
-                              'rgba(255, 99, 132, 1)', 
-                              'rgba(54, 162, 235, 1)', 
-                              'rgba(255, 206, 86, 1)',
-                              'rgba(75, 192, 192, 1)',
-                              'rgba(153, 102, 255, 1)',
-                              'rgba(255, 159, 64, 1)' 
-            ],
+            backgroundColor: ['rgba(240, 48, 48, 0.8)', ],
+            borderColor: ['rgba(240, 48, 48, 0.8)', ],
             borderWidth: 3
           },{
             label: 'media',
             data: [um_media[0].valore, um_media[1].valore, um_media[2].valore, um_media[3].valore], //valori temperatura
-            fill: true,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)',
-            pointBackgroundColor: 'rgb(54, 162, 235)',
-            pointBorderColor: 'rgb(32, 123, 232)', // colore punti
-            pointHoverBackgroundColor: 'rgb(32, 123, 232)',
-            pointHoverBorderColor: 'rgb(54, 162, 235)'
+            fill: false,
+            backgroundColor: 'rgba(61,48,240, 0.8)',
+            borderColor: 'rgb(61,48,240, 0.8)',
 
 
 
           },{
             label: 'moda',
             data: [um_moda[0].valore, um_moda[1].valore, um_moda[2].valore, um_moda[3].valore], //valori temperatura
-            fill: true,
-            backgroundColor: 'rgb(0, 255, 0)',
-            borderColor: 'rgb(0, 80, 0)',
-            pointBackgroundColor: 'rgb(230, 255, 230)',
-            pointBorderColor: 'rgb(230, 255, 230)', // colore punti
-            pointHoverBackgroundColor: 'rgb(230, 255, 230)',
-            pointHoverBorderColor: 'rgb(230, 255, 230)'
+            fill: false,
+            backgroundColor: 'rgb(0, 255, 0, 0.8)',
+            borderColor: 'rgb(0, 80, 0, 0.8)',
 
 
 
@@ -176,32 +157,21 @@
     // SECONDO GRAFICO /////////////////////////////////////////////////////////
     const ctx1 = document.getElementById('myChart1').getContext('2d');
     const myChart1 = new Chart(ctx1, {
-      type: 'line',
+      type: 'bar',
       data:{
         labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14', 'giorno 15', 'giorno 16', 'giorno 17', 'giorno 18', 'giorno 19', 'giorno 20', 'giorno 21', 'giorno 22', 'giorno 23', 'giorno 24', 'giorno 25', 'giorno 26', 'giorno 27', 'giorno 28', 'giorno 29', 'giorno 30', 'giorno 31'],
           datasets: [{
             label: 'mediana',
             data: [temp_mediana[0].valore, temp_mediana[1].valore, temp_mediana[2].valore, temp_mediana[3].valore],  // collegamento con il file json, array e loro valori
-            backgroundColor: ['rgba(255, 99, 11, 0.2)', 
-                              'rgba(54, 162, 235, 0.2)', 
-                              'rgba(255, 206, 86, 0.2)',
-                              'rgba(75, 192, 192, 0.2)',
-            ],
-            borderColor: [
-                              'rgba(255, 99, 132, 1)', 
-                              'rgba(54, 162, 235, 1)', 
-                              'rgba(255, 206, 86, 1)',
-                              'rgba(75, 192, 192, 1)',
-                              'rgba(153, 102, 255, 1)',
-                              'rgba(255, 159, 64, 1)' 
-            ],
+            backgroundColor: ['rgba(240, 48, 48, 0.8)'],
+            borderColor: ['rgba(240, 48, 48, 0.8)'],
             borderWidth: 3
           },{
             label: 'media',
             data: [temp_media[0].valore, temp_media[1].valore, temp_media[2].valore, temp_media[3].valore], //valori temperatura
             fill: true,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)',
+            backgroundColor: 'rgba(61,48,240, 0.8)',
+            borderColor: 'rgba(61,48,240, 0.8)',
             pointBackgroundColor: 'rgb(54, 162, 235)',
             pointBorderColor: 'rgb(32, 123, 232)', // colore punti
             pointHoverBackgroundColor: 'rgb(32, 123, 232)',
@@ -213,8 +183,8 @@
             label: 'moda',
             data: [temp_moda[0].valore, temp_moda[1].valore, temp_moda[2].valore, temp_moda[3].valore], //valori temperatura
             fill: true,
-            backgroundColor: 'rgb(0, 255, 0)',
-            borderColor: 'rgb(0, 80, 0)',
+            backgroundColor: 'rgb(0, 255, 0, 0.8)',
+            borderColor: 'rgb(0, 255, 0, 0.8)',
             pointBackgroundColor: 'rgb(230, 255, 230)',
             pointBorderColor: 'rgb(230, 255, 230)', // colore punti
             pointHoverBackgroundColor: 'rgb(230, 255, 230)',
