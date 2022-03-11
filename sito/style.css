@@ -393,12 +393,12 @@ div#hormenu .lingua {
     width:220px;
     height:270px;
 }
-figcaption{
+.caselle figcaption{
     text-align: center;
     font-weight:bold;
     margin-top:2px;
 }
-figcaption:hover{
+.caselle figcaption:hover{
     text-decoration:underline;
     color:green;
     cursor: zoom-in;
@@ -612,10 +612,7 @@ ol{
 	text-decoration: none;
 	color:black;
 }
-.inlineclasse{
-	display: inline-block;
-	width: 250px;
-	height: 250px;
-	padding:5px;
+.avatar{
 	border-radius: 50%;
+	dis
 }
