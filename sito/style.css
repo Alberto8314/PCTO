@@ -408,6 +408,9 @@ div#hormenu .lingua {
     text-decoration:underline;
     cursor: crosshair;
 }
+.caselle a {
+	text-decoration: none;
+}
 /*fine css i nostri prodotti*/
 
 /*inizio css serre*/
