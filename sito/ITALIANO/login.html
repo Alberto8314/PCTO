@@ -13,16 +13,9 @@
 		<link href="../login.css" type="text/css" rel="stylesheet" />
 		<script type="text/javascript">
 			function mostraMessaggio() {
-				var username=document.getElementById("username").value;
-				if(username.length>=8&&username.length<=20) 
-			window.alert("Registrazione completata");
-			else{
-				window.alert("Qualcosa è andato storto,controlla il numero di caratteri e riprova");
-			}
-			}
-			function mostraMessaggio() {
 				var password=document.getElementById("password").value;
-				if(password.length>=8) 
+				var username=document.getElementById("username").value;
+				if(username.length>=8&&username.length<=20&&password.length>=8) 
 			window.alert("Registrazione completata");
 			else{
 				window.alert("Qualcosa è andato storto,controlla il numero di caratteri e riprova");
