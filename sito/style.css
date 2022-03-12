@@ -65,7 +65,7 @@ body {
 	background-attachment: fixed;
 }
 .body {
-	border: 5px solid #005000;;
+	border: 5px solid #005000;
 	grid-area: body;
 	width: 900px;
 	height:2300px;
@@ -426,6 +426,7 @@ div#hormenu .lingua {
 	padding-top: 80px;
 	font-weight: bold;
 	font-size: 25px;
+	color: #022600;
 }
 ol{
     margin-left: auto;
@@ -607,6 +608,7 @@ ol{
 	padding-top: 200px;
 	font-weight: bold;
 	font-size: 25px;
+	color: #022600;
 }
 
 .imgdettaglio2 {
@@ -660,4 +662,21 @@ ol{
 .savani{
 	text-align: center;
 	display: grid;
+}
+.homee{
+	color:darkgreen;
+	text-align: center;
+	font-size:50px;
+}
+.animate__animated.animate__swing {
+	--animate-duration: 1.4s;
+
+}
+.videoserra{
+	text-align:center;
+}
+.home2{
+	color:darkgreen;
+	text-align: center;
+	font-size: 35px;
 }
