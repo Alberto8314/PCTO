@@ -671,5 +671,12 @@ ol{
 .animate__animated.animate__swing {
 	--animate-duration: 1.4s;
 
-  }
-  
+}
+.videoserra{
+	text-align:center;
+}
+.home2{
+	color:darkgreen;
+	text-align: center;
+	font-size: 35px;
+}
