@@ -661,3 +661,13 @@ ol{
 	text-align: center;
 	display: grid;
 }
+.homee{
+	color:darkgreen;
+	text-align: center;
+	font-size:50px;
+}
+.animate__animated.animate__swing {
+	--animate-duration: 1.4s;
+
+  }
+  
