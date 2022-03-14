@@ -69,8 +69,8 @@
 					<div class="body">
               <h1 class="titgrafici">DATI E STATISTICHE</h1>
               <div class="chartBox">
-                <p class="testograf">In questa pagina troverete tutti i grafici relativi ai dati raccolti da Arduino.<br />Questo grafico rappresenta la mediana, la moda e la media dell'umidit&aacute; nella serra nell'arco di due settimane.</P><div class="porz1"><canvas id="myChart" width ="50px " height="50px"></canvas></div> <!--id del primo grafico myChart-->
-                <p class="testograf">Questo grafico rappresenta la mediana, la moda e la media della temperatura nella serra nell'arco di due settimane.</p><div class="porz2"><canvas id="myChart1" width="50px" height="50px"></canvas></div>
+                <p class="testograf">In questa pagina troverete tutti i grafici relativi ai dati raccolti da Arduino.<br />Questo grafico rappresenta la mediana, la moda e la media dell'umidit&aacute; nella serra nell'arco di due settimane(espressa in percentuale).</P><div class="porz1"><canvas id="myChart" width ="50px " height="50px"></canvas></div> <!--id del primo grafico myChart-->
+                <p class="testograf">Questo grafico rappresenta la mediana, la moda e la media della temperatura nella serra nell'arco di due settimane(espressa in gradi).</p><div class="porz2"><canvas id="myChart1" width="50px" height="50px"></canvas></div>
                 </div>
       </div>
 					<div class="rightSide"></div>
@@ -109,16 +109,16 @@
     const myChart = new Chart(ctx, {
       type: 'bar',
       data:{
-          labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10'],
+          labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 6', 'giorno 7','giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14'],
           datasets: [{
             label: 'mediana',
-            data: [um_mediana[0].valore, um_mediana[1].valore, um_mediana[2].valore, um_mediana[3].valore],  // collegamento con il file json, array e loro valori
+            data: [um_mediana[0].valore, um_mediana[1].valore, um_mediana[2].valore, um_mediana[3].valore, um_mediana[4].valore, um_mediana[5].valore, um_mediana[6].valore, um_mediana[7].valore, um_mediana[8].valore, um_mediana[9].valore, um_mediana[10].valore, um_mediana[11].valore, um_mediana[12].valore, um_mediana[13].valore],  // collegamento con il file json, array e loro valori
             backgroundColor: ['rgba(240, 48, 48, 0.8)', ],
             borderColor: ['rgba(240, 48, 48, 0.8)', ],
             borderWidth: 3
           },{
             label: 'media',
-            data: [um_media[0].valore, um_media[1].valore, um_media[2].valore, um_media[3].valore], //valori temperatura
+            data: [um_media[0].valore, um_media[1].valore, um_media[2].valore, um_media[3].valore, um_media[4].valore, um_media[5].valore, um_media[6].valore, um_media[7].valore, um_media[8].valore, um_media[9].valore, um_media[10].valore, um_media[11].valore, um_media[12].valore, um_media[13].valore], //valori temperatura
             fill: false,
             backgroundColor: 'rgba(61,48,240, 0.8)',
             borderColor: 'rgb(61,48,240, 0.8)',
@@ -127,7 +127,7 @@
 
           },{
             label: 'moda',
-            data: [um_moda[0].valore, um_moda[1].valore, um_moda[2].valore, um_moda[3].valore], //valori temperatura
+            data: [um_moda[0].valore, um_moda[1].valore, um_moda[2].valore, um_moda[3].valore, um_moda[4].valore, um_moda[5].valore, um_moda[6].valore, um_moda[7].valore, um_moda[8].valore, um_moda[9].valore, um_moda[10].valore, um_moda[11].valore, um_moda[12].valore, um_moda[13].valore], //valori temperatura
             fill: false,
             backgroundColor: 'rgb(0, 255, 0, 0.8)',
             borderColor: 'rgb(0, 80, 0, 0.8)',
@@ -159,16 +159,16 @@
     const myChart1 = new Chart(ctx1, {
       type: 'bar',
       data:{
-        labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5', 'giorno 8', 'giorno 9', 'giorno 10'],
+        labels: ['giorno 1', 'giorno 2 ', 'giorno 3', 'giorno 4', 'giorno 5','giorno 6', 'giorno 7', 'giorno 8', 'giorno 9', 'giorno 10', 'giorno 11', 'giorno 12', 'giorno 13', 'giorno 14'],
           datasets: [{
             label: 'mediana',
-            data: [temp_mediana[0].valore, temp_mediana[1].valore, temp_mediana[2].valore, temp_mediana[3].valore],  // collegamento con il file json, array e loro valori
+            data: [temp_mediana[0].valore, temp_mediana[1].valore, temp_mediana[2].valore, temp_mediana[3].valore, temp_mediana[4].valore, temp_mediana[5].valore, temp_mediana[6].valore, temp_mediana[7].valore, temp_mediana[8].valore, temp_mediana[9].valore, temp_mediana[10].valore, temp_mediana[11].valore, temp_mediana[12].valore, temp_mediana[13].valore,  ],  // collegamento con il file json, array e loro valori
             backgroundColor: ['rgba(240, 48, 48, 0.8)'],
             borderColor: ['rgba(240, 48, 48, 0.8)'],
             borderWidth: 3
           },{
             label: 'media',
-            data: [temp_media[0].valore, temp_media[1].valore, temp_media[2].valore, temp_media[3].valore], //valori temperatura
+            data: [temp_media[0].valore, temp_media[1].valore, temp_media[2].valore, temp_media[3].valore, temp_media[4].valore, temp_media[5].valore, temp_media[6].valore, temp_media[7].valore, temp_media[8].valore, temp_media[9].valore,temp_media[10].valore, temp_media[11].valore, temp_media[12].valore, temp_media[13].valore,], //valori temperatura
             fill: false,
             backgroundColor: 'rgba(61,48,240, 0.8)',
             borderColor: 'rgba(61,48,240, 0.8)',
@@ -181,7 +181,7 @@
 
           },{
             label: 'moda',
-            data: [temp_moda[0].valore, temp_moda[1].valore, temp_moda[2].valore, temp_moda[3].valore], //valori temperatura
+            data: [temp_moda[0].valore, temp_moda[1].valore, temp_moda[2].valore, temp_moda[3].valore,  temp_moda[4].valore,  temp_moda[5].valore,  temp_moda[6].valore,  temp_moda[7].valore,  temp_moda[8].valore,  temp_moda[9].valore,  temp_moda[10].valore,  temp_moda[11].valore,  temp_moda[12].valore,  temp_moda[13].valore], //valori temperatura
             fill: false,
             backgroundColor: 'rgb(0, 255, 0, 0.8)',
             borderColor: 'rgb(0, 255, 0, 0.8)',

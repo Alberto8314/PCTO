@@ -1,6 +1,7 @@
-media_temp='[{"valore": 18.82}, {"valore": 18.72}, {"valore": 18.90}, {"valore": 18.93}]'
-media_um='[{"valore": 30.00}, {"valore": 29.48}, {"valore": 30.17}, {"valore": 30.29}]'
-mediana_temp='[{"valore": 18.84}, {"valore": 18.75}, {"valore": 18.93}, {"valore": 18.93}]'
-mediana_um='[{"valore": 30.00}, {"valore": 29.00}, {"valore": 30.00}, {"valore": 30.00}]'
-moda_temp='[{"valore": 18.84}, {"valore": 18.84}, {"valore": 18.93}, {"valore": 18.93}]'
-moda_um='[{"valore": 30.00}, {"valore": 30.00}, {"valore": 30.00}, {"valore": 30.00}]'
+media_temp='[{"valore": 18.82}, {"valore": 18.72}, {"valore": 18.90}, {"valore": 18.93},{"valore": 19.00}, {"valore": 16.55}, {"valore": 15.88}, {"valore": 18.93},{"valore": 16.78}, {"valore": 13.11}, {"valore": 18.93}, {"valore": 19.23}, {"valore": 21.22}, {"valore": 20.1}]'
+media_um='[{"valore": 58.00}, {"valore": 55.00}, {"valore": 59.00}, {"valore": 52.00}, {"valore": 50.00}, {"valore": 59.00}, {"valore": 58.00}, {"valore": 59.00}, {"valore": 55.00}, {"valore": 51.00}, {"valore": 51.00}, {"valore": 48.00}, {"valore": 46.00}, {"valore": 50.00}]'
+mediana_temp='[{"valore": 18.84}, {"valore": 18.75}, {"valore": 18.93}, {"valore": 18.93}, {"valore": 19.22}, {"valore": 21.22}, {"valore": 14.33}, {"valore": 16.3}, {"valore": 19.12}, {"valore": 16.21}, {"valore": 11.93}, {"valore": 21.54}, {"valore": 13.51}, {"valore": 16.55}]'
+mediana_um='[{"valore": 30.00}, {"valore": 29.00}, {"valore": 30.00}, {"valore": 30.00}, {"valore": 25.00}, {"valore": 24.00}, {"valore": 26.00}, {"valore": 28.50}, {"valore": 30.00}, {"valore": 26.20}, {"valore": 27.00}, {"valore": 29.00}, {"valore": 25.00}, {"valore": 31.00}]'
+moda_temp='[{"valore": 18.84}, {"valore": 18.84}, {"valore": 18.93}, {"valore": 18.93}, {"valore": 15.11}, {"valore": 18.00}, {"valore": 11.99}, {"valore": 12.2}, {"valore": 14.78}, {"valore": 18.79}, {"valore": 11.34}, {"valore": 20.93}, {"valore": 18.93}, {"valore": 19.91}]'
+moda_um='[{"valore": 31.00}, {"valore": 29.48}, {"valore": 33.17}, {"valore": 34.29}, {"valore": 35.50}, {"valore": 45.32}, {"valore": 44.00}, {"valore": 41.22}, {"valore": 40.21}, {"valore": 46.9}, {"valore": 41.00}, {"valore": 36.29}, {"valore": 36.00}, {"valore": 31.12}]'
+
