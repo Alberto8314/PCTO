@@ -18,6 +18,7 @@ body {
 	justify-content: space-around;
 	-webkit-justify-content: space-around;
 	font-family: 'Century Gothic';
+	width: 1670px;
 }
 
 #menu .testo {
@@ -36,7 +37,7 @@ body {
 
 .layout {
 	border: none;
-	width: auto;
+	width: 1670px;
 	height: auto;
 	display: flex;
 	flex-direction: nowrap;
@@ -46,11 +47,7 @@ body {
 	justify-content: space-around;
 	-webkit-justify-content: space-around;
 	display: grid;
-	grid:
-		"header header header" auto
-		"leftSide body rightSide" 1fr
-		"footer footer footer" auto
-		/ auto 1fr auto;
+	grid: "header header header" auto "leftSide body rightSide" 1fr "footer footer footer" auto / auto 1fr auto;
 	gap: 8px;
 }
 
