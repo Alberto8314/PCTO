@@ -17,6 +17,7 @@ body {
 	-webkit-flex-flow: row nowrap;
 	justify-content: space-around;
 	-webkit-justify-content: space-around;
+	font-family: 'Century Gothic';
 }
 
 #menu .testo {
