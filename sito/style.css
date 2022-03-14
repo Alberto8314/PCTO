@@ -472,7 +472,25 @@ ol{
 }
 .centercaselle{
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 10px;
+}
+
+.abbonamenti {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.inptitle {
+	font-size: 30px;
+	color: darkgreen;
+	text-align: center;
+}
+
+.inptitle2 {
+	font-size: 30px;
+	color: darkgreen;
+	text-align: center;
+	margin-top: 80px;
 }
 
 .alogo {
