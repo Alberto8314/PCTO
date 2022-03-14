@@ -16,9 +16,9 @@
 				var password=document.getElementById("password").value;
 				var username=document.getElementById("username").value;
 				if(username.length>=8&&username.length<=20&&password.length>=8) 
-                window.alert("Registration completed");
+			window.alert("Registrazione completata");
 			else{
-				window.alert("Something went wrong, check the number of characters and try again");
+				window.alert("Qualcosa è andato storto,controlla il numero di caratteri e riprova");
 			}
 			}
 	</script>
@@ -115,8 +115,8 @@
 					<form >
 						<h1>Sign in</h1>
 						<input type="text" id="username" placeholder="Name (8 to 20 characters)" name="username" maxlength="20" minlength="8" required>
-						<input type="password" id="password" placeholder="Password (minimum of 8 characters)" name="password" minlength="8" required>
-						<input type="button" value="Registrati" class="b" onclick="mostraMessaggio()">
+						<input type="password" id="password" placeholder="Password (minimum 8 characters)" name="password" minlength="8" required>
+						<input type="button" value="Sign in" class="b" onclick="mostraMessaggio()">
 						<!--<button type="submit" name="register">Registrati</button>-->
 					</form>
 				</div>
